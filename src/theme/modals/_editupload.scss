@@ -1,34 +1,34 @@
 .uploadModal_f82cc7 {
-    .inner_f82cc7 {
-        margin: 32px 32px 0 32px;
-        z-index: 102;
+	.inner_f82cc7 {
+		margin: 32px 32px 0 32px;
+		z-index: 102;
 
-        .file_f82cc7 .description_f82cc7 .filename_f82cc7 {
-            padding: 0;
-        }
+		.file_f82cc7 .description_f82cc7 .filename_f82cc7 {
+			padding: 0;
+		}
 
-        .comment_f82cc7 {
-            margin: 0 32px;
+		.comment_f82cc7 {
+			margin: 0 32px;
 
-            .label_f82cc7 {
-                color: var(--text-muted);
-                font-size: 14px;
-                letter-spacing: .5px;
-                line-height: 36px;
-                font-weight: 700;
-            }
-        }
+			.label_f82cc7 {
+				color: var(--text-muted);
+				font-size: 14px;
+				letter-spacing: 0.5px;
+				line-height: 36px;
+				font-weight: 700;
+			}
+		}
 
-        .channelTextAreaUpload_f82cc7 {
-            margin: 0 0 10px 0;
-        }
-    }
+		.channelTextAreaUpload_f82cc7 {
+			margin: 0 0 10px 0;
+		}
+	}
 
-    .icon_f82cc7 {
-        filter: drop-shadow(0 8px 16px rgb(0 0 0/.3));
-    }
+	.icon_f82cc7 {
+		filter: drop-shadow(0 8px 16px rgb(0 0 0/0.3));
+	}
 
-    .footerRightAlign_f82cc7 {
-        gap: 4px;
-    }
+	.footerRightAlign_f82cc7 {
+		gap: 4px;
+	}
 }

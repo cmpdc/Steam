@@ -1,13 +1,11 @@
 .slider_c7a159 {
+	.bar_c7a159 {
+		height: 6px;
+		border-radius: 3px;
+		background: var(--background-modifier-accent-dark);
+	}
 
-    .bar_c7a159 {
-        height: 6px;
-        border-radius: 3px;
-        background: var(--background-modifier-accent-dark);
-    }
-
-    .markDash_c7a159 {
-        background: var(--background-modifier-accent-dark);
-    }
-    
+	.markDash_c7a159 {
+		background: var(--background-modifier-accent-dark);
+	}
 }

@@ -1,36 +1,40 @@
 .applicationStore_cecc86 {
-    background: none;
-    max-width: var(--content-width);
+	background: none;
+	max-width: var(--content-width);
 
-    .scroller__244e5 {
-        background: #000;
-        overflow-y: overlay !important;
-    }
+	.scroller__244e5 {
+		background: #000;
+		overflow-y: overlay !important;
+	}
 
-    svg.root-1F1IKT {
-        display: none;
-    }
+	svg.root-1F1IKT {
+		display: none;
+	}
 }
 
 .fullscreenHero_a8b566 {
-    padding: 0;
-    margin: 0;
-    height: 395px;
+	padding: 0;
+	margin: 0;
+	height: 395px;
 
-    &::after {
-        content: '';
-        z-index: -1;
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, hsl(235 calc(var(--saturation-factor, 1)*85.6%) 64.7%) 48%, hsl(269 calc(var(--saturation-factor, 1)*52.7%) 52.7%) 55%);
-        mask: radial-gradient(circle at center, black 0%, transparent 45%);
-    }
+	&::after {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			135deg,
+			hsl(235 calc(var(--saturation-factor, 1) * 85.6%) 64.7%) 48%,
+			hsl(269 calc(var(--saturation-factor, 1) * 52.7%) 52.7%) 55%
+		);
+		mask: radial-gradient(circle at center, black 0%, transparent 45%);
+	}
 }
 
 .premiumContainer__11813 {
-    .containerPadding-2Et74V {
-        padding: 0;
-    }
+	.containerPadding-2Et74V {
+		padding: 0;
+	}
 }

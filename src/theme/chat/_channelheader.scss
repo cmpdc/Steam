@@ -1,139 +1,145 @@
-.content_a7d72e:before {
-    display: none;
+.content_a7d72e {
+	&:before {
+		display: none;
+	}
 }
 
 .container_fc4f04.themed_fc4f04 {
-    background: linear-gradient(90deg, hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1)*41.5%) 41.6%/.919) 11.38%, hsl(calc(var(--accent-hue) + 4) calc(var(--saturation-factor, 1)*51%) 46%/.8) 25.23%, hsl(calc(var(--accent-hue) + 24) calc(var(--saturation-factor, 1)*76%) 24.5%) 100%);
-    box-shadow: 0 0 3px rgb(0 0 0/.4);
-    min-height: 36px;
-    margin-top: var(--content-gutter);
-    padding: 0 5px 0 4px;
-    overflow: hidden;
+	min-height: 36px;
+	background: linear-gradient(
+		90deg,
+		hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1) * 41.5%) 41.6%/0.919) 11.38%,
+		hsl(calc(var(--accent-hue) + 4) calc(var(--saturation-factor, 1) * 51%) 46%/0.8) 25.23%,
+		hsl(calc(var(--accent-hue) + 24) calc(var(--saturation-factor, 1) * 76%) 24.5%) 100%
+	) !important;
+	box-shadow: 0 0 3px rgba(#000, 0.4);
+	margin-top: var(--content-gutter);
+	padding: 0 5px 0 4px;
+	overflow: hidden;
 
-    .children_fc4f04:after {
-        display: none;
-    }
+	.children_fc4f04:after {
+		display: none;
+	}
 
-    .divider_fc4f04 {
-        display: none;
-    }
+	.divider_fc4f04 {
+		display: none;
+	}
 
-    .title_fc4f04 {
-        text-shadow: 0 2px 3px rgb(0 0 0/.3);
-        font-size: 14px;
-        text-transform: capitalize;
-    }
+	.title_fc4f04 {
+		text-shadow: 0 2px 3px rgb(0 0 0/0.3);
+		font-size: 14px;
+		text-transform: capitalize;
+	}
 
-    .icon_fc4f04 {
-        color: var(--header-primary);
-        width: 16px;
-        height: 16px;
-        filter: drop-shadow(0px 2px 3px rgb(0 0 0/.3));
-    }
+	.count__03d4d {
+		color: var(--header-primary) !important;
+		font-size: 14px;
+	}
 
-    .count__03d4d {
-        color: var(--header-primary) !important;
-        font-size: 14px;
-    }
+	.iconWrapper_fc4f04 {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		height: 36px;
+	}
 
-    .iconWrapper_fc4f04 {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        height: 36px;
-    }
+	.icon_fc4f04 {
+		color: var(--header-primary);
+		width: 16px;
+		height: 16px;
+		filter: drop-shadow(0px 2px 3px rgb(0 0 0/0.3));
+	}
 
-    .toolbar_fc4f04 {
-        .returnButton_d20375 {
-            background: var(--btn-brand);
-            color: var(--btn-brand-text);
-            transition: none;
-            min-height: 24px;
-            height: 24px;
+	.toolbar_fc4f04 {
+		.returnButton_d20375 {
+			background: var(--btn-brand);
+			color: var(--btn-brand-text);
+			transition: none;
+			min-height: 24px;
+			height: 24px;
 
-            &:hover {
-                background: var(--btn-brand-hover);
-                color: #fff;
+			&:hover {
+				background: var(--btn-brand-hover);
+				color: #fff;
 
-                svg {
-                    color: #fff;
-                }
-            }
+				svg {
+					color: #fff;
+				}
+			}
 
-            svg {
-                color: var(--btn-brand-text);
-            }
-        }
-    }
+			svg {
+				color: var(--btn-brand-text);
+			}
+		}
 
-    .toolbar_fc4f04 .iconWrapper_fc4f04[aria-label] {
-        margin: 0;
-        padding: 0 14px;
-    }
+		.iconWrapper_fc4f04[aria-label] {
+			margin: 0;
+			padding: 0 14px;
+		}
 
-    .toolbar_fc4f04 .iconWrapper_fc4f04:where(:hover, [aria-expanded="true"]) {
-        background: var(--topbar-item-hover);
-    }
+		.iconWrapper_fc4f04:where(:hover, [aria-expanded="true"]) {
+			background: var(--topbar-item-hover);
+		}
+	}
 
-    .iconWrapper_fc4f04[aria-label]:has(.iconBadge_fc4f04) {
+	.iconWrapper_fc4f04[aria-label]:has(.iconBadge_fc4f04) {
+		.svg_d48241 {
+			height: 16px !important;
+			width: 16px !important;
+		}
 
-        .svg_d48241 {
-            height: 16px !important;
-            width: 16px !important;
-        }
+		.icon_fc4f04 {
+			height: 24px;
+			width: 24px;
+			color: var(--status-danger);
+		}
+	}
 
-        .icon_fc4f04 {
-            height: 24px;
-            width: 24px;
-            color: var(--status-danger);
-        }
-    }
+	.iconBadge_fc4f04 {
+		display: none;
+	}
 
-    .iconBadge_fc4f04 {
-        display: none;
-    }
+	.topic_bf3bbb {
+		text-shadow: 0 1px 2px rgb(0 0 0/0.3);
+	}
 
-    .topic_bf3bbb {
-        text-shadow: 0 1px 2px rgb(0 0 0/.3);
-    }
+	.search_ff5f90 {
+		order: 1;
+		margin: 0;
+	}
 
-    .search_ff5f90 {
-        order: 1;
-        margin: 0;
-    }
+	.searchBar_a46bef {
+		min-width: 200px;
+		height: 28px;
+		border-radius: 3px;
+		border: 1px solid rgb(0 0 0/0.3);
+		box-shadow: 1px 1px 0 rgb(255 255 255/0.2);
+		padding: 1px 1px 1px 4px;
+		background: hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 45%) 35%);
+	}
 
-    .searchBar_a46bef {
-        min-width: 200px;
-        height: 28px;
-        border-radius: 3px;
-        border: 1px solid rgb(0 0 0/.3);
-        box-shadow: 1px 1px 0 rgb(255 255 255/.2);
-        padding: 1px 1px 1px 4px;
-        background: hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*45%) 35%);
-    }
+	.search_a46bef .DraftEditor-root .public-DraftEditorPlaceholder-root {
+		color: hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 45%) 10%);
+		font-size: 14px;
+		font-style: italic;
+		text-shadow: 1px 1px 0 rgb(255 255 255/0.1);
+	}
 
-    .search_a46bef .DraftEditor-root .public-DraftEditorPlaceholder-root {
-        color: hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*45%) 10%);
-        font-size: 14px;
-        font-style: italic;
-        text-shadow: 1px 1px 0 rgb(255 255 255/.1);
-    }
+	.search_a46bef .DraftEditor-root .DraftEditor-editorContainer {
+		padding: 0 2px;
+	}
 
-    .search_a46bef .DraftEditor-root .DraftEditor-editorContainer {
-        padding: 0 2px;
-    }
+	.icon_a46bef {
+		background: hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 73%) 65%);
+		border-radius: 2px;
+	}
 
-    .icon_a46bef {
-        background: hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*73%) 65%);
-        border-radius: 2px;
-    }
+	.icon_a46bef:not(:hover) {
+		opacity: 0.76;
+	}
 
-    .icon_a46bef:not(:hover) {
-        opacity: 0.76;
-    }
-
-    .icon_effbe2,
-    .clear_effbe2.iconLayout_effbe2:hover .icon_effbe2 {
-        color: var(--background-accent);
-    }
+	.icon_effbe2,
+	.clear_effbe2.iconLayout_effbe2:hover .icon_effbe2 {
+		color: var(--background-accent);
+	}
 }

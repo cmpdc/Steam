@@ -1,126 +1,124 @@
 .recentMentionsPopout_ddb5b4 {
+	.container_ddb5b4,
+	.channel_d09ffd {
+		background-color: var(--modal-popout-message);
+		border-radius: 0;
+	}
 
-    .container_ddb5b4,
-    .channel_d09ffd {
-        background-color: var(--modal-popout-message);
-        border-radius: 0;
-    }
+	.container_ddb5b4 {
+		margin-bottom: 4px;
+	}
 
-    .container_ddb5b4 {
-        margin-bottom: 4px;
-    }
+	.channelHeader_f3978e {
+		background: var(--modal-popout-message);
+		padding: 10px 10px 0 10px;
+		border-bottom: none;
+	}
 
-    .channelHeader_f3978e {
-        background: var(--modal-popout-message);
-        padding: 10px 10px 0 10px;
-        border-bottom: none;
-    }
-
-    .messageContainer_ddb5b4 {
-        padding: 0;
-    }
+	.messageContainer_ddb5b4 {
+		padding: 0;
+	}
 }
 
 #app-mount .recentMentionsPopout_ddb5b4 {
-    .tab_f0cd33 {
-        border-radius: 2px;
-        padding: 5px 10px;
-        font-size: 12px;
-        font-weight: 400;
-        height: 30px;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 2px;
+	.tab_f0cd33 {
+		border-radius: 2px;
+		padding: 5px 10px;
+		font-size: 12px;
+		font-weight: 400;
+		height: 30px;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 2px;
 
-        &:hover {
-            background: var(--background-modifier-accent);
-        }
+		&:hover {
+			background: var(--background-modifier-accent);
+		}
 
-        &.active_f0cd33 {
-            background: var(--background-accent-hover);
-        }
-    }
+		&.active_f0cd33 {
+			background: var(--background-accent-hover);
+		}
+	}
 }
 
 .recentMentionsPopout_ddb5b4 {
+	.channel_d09ffd {
+		margin: 0 0 4px 0;
 
-    .channel_d09ffd {
-        margin: 0 0 4px 0;
+		.messages_c06487 {
+			padding: 0;
+		}
+	}
 
-        .messages_c06487 {
-            padding: 0;
-        }
-    }
-
-    .iconActiveMedium_f11207 {
-        border-radius: 0;
-    }
+	.iconActiveMedium_f11207 {
+		border-radius: 0;
+	}
 }
 
-#app-mount .channelHeader_f3978e+[class^="message"] {
-    .wrapper_f9f2ca {
-        padding: 10px !important;
-    }
+#app-mount .channelHeader_f3978e + [class^="message"] {
+	.wrapper_f9f2ca {
+		padding: 10px !important;
+	}
 
-    .repliedMessage_f9f2ca {
-        left: 15px !important;
-        max-width: calc(100% - 20px);
+	.repliedMessage_f9f2ca {
+		left: 15px !important;
+		max-width: calc(100% - 20px);
 
-        .repliedTextContent_f9f2ca {
-            display: flex;
-            align-items: center;
-        }
-    }
+		.repliedTextContent_f9f2ca {
+			display: flex;
+			align-items: center;
+		}
+	}
 
-    .avatar_f9f2ca {
-        left: 12px !important;
-    }
+	.avatar_f9f2ca {
+		left: 12px !important;
+	}
 
-    .header_f9f2ca {
-        padding-left: 54px !important;
-    }
+	.header_f9f2ca {
+		padding-left: 54px !important;
+	}
 
-    .jumpButton_aab0bc {
-        right: 10px;
-    }
+	.jumpButton_aab0bc {
+		right: 10px;
+	}
 }
 
 .recentMentionsPopout_ddb5b4 .channelHeader_f3978e {
-    background: none;
+	background: none;
 
-    .channelNameHeader_f3978e {
-        font-size: 12px;
-    }
+	.channelNameHeader_f3978e {
+		font-size: 12px;
+	}
 
-    .closeButton_ddb5b4 {
-        margin-left: 0;
-    }
+	.closeButton_ddb5b4 {
+		margin-left: 0;
+	}
 }
 
 .container_ddb5b4:has([class^="jumpButton"]:hover),
 .channel_d09ffd:has([class^="jumpButton"]:hover) {
-    background: var(--background-accent);
+	background: var(--background-accent);
 }
 
 .container_ddb5b4,
 .channel_d09ffd {
-    [class^="jumpButton"] {
-        margin: 0;
-        border-radius: 0;
-        background: var(--btn-grey-hover);
-        height: 14px;
-        padding: 2px 8px;
-        display: flex;
-        top: 10px;
-        right: 10px;
+	[class^="jumpButton"] {
+		margin: 0;
+		border-radius: 0;
+		background: var(--btn-grey-hover);
+		height: 14px;
+		padding: 2px 8px;
+		display: flex;
+		top: 10px;
+		right: 10px;
 
-        .text_ac3dc2 {
-            line-height: 14px;
-            font-size: 11px;
-        }
+		.text_ac3dc2 {
+			line-height: 14px;
+			font-size: 11px;
+		}
 
-        &:hover {
-            background: var(--background-accent-hover);
-        }
-    }
+		&:hover {
+			background: var(--background-accent-hover);
+		}
+	}
 }

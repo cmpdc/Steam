@@ -1,15 +1,15 @@
 // The CSS to be included in your .theme.css file.
 // Addon @imports should be placed here.
 
-@import url(https://maendisease.github.io/Steam/addons/horizontalserverlist.css);
+@import url("https://maendisease.github.io/Steam/addons/horizontalserverlist.css");
 
 :root {
-    --hue-shift: 0; /* 0-360 */
+	--hue-shift: 0; /* 0-360 */
 
-    --content-width: 940px; /* 100% = Full Width */
-    --message-width: 640px;
-    --server-size: 28px;
+	--content-width: 940px; /* 100% = Full Width */
+	--message-width: 640px;
+	--server-size: 28px;
 
-    --custom-font: "gg sans";
-    --custom-font-code: monospace;
+	--custom-font: "gg sans";
+	--custom-font-code: monospace;
 }

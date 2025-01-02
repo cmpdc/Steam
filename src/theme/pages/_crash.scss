@@ -2,94 +2,93 @@
 @use "../modals/generic";
 
 #app-mount {
-    .errorPage_dd2aa2 {
-        background:
-            linear-gradient(to right, rgb(0 0 0/.8), rgb(0 0 0/.8)),
-            url(https://maendisease.github.io/Steam/illustrations/colored_body_top.avif) center left/cover no-repeat,
-            linear-gradient(to right, var(--background-tertiary), var(--background-tertiary));
-    }
+	.errorPage_dd2aa2 {
+		background:
+			linear-gradient(to right, rgb(0 0 0/0.8), rgb(0 0 0/0.8)),
+			url(https://maendisease.github.io/Steam/illustrations/colored_body_top.avif) center left/cover no-repeat,
+			linear-gradient(to right, var(--background-tertiary), var(--background-tertiary));
+	}
 
-    .image_b06619 {
-        background: none;
-    }
+	.image_b06619 {
+		background: none;
+	}
 }
 
 .errorPage_dd2aa2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    >.flex_bba380 {
-        background: var(--modal-background);
-        max-width: 600px;
-        max-height: 300px;
-        width: fit-content;
-        height: fit-content;
-        @include generic.modalTopBar;
-        border: 0.5px solid black;
-        position: relative;
-        flex-grow: 0;
-        padding: 32px;
-        overflow: hidden;
-    }
+	> .flex_bba380 {
+		background: var(--modal-background);
+		max-width: 600px;
+		max-height: 300px;
+		width: fit-content;
+		height: fit-content;
+		@include generic.modalTopBar;
+		border: 0.5px solid black;
+		position: relative;
+		flex-grow: 0;
+		padding: 32px;
+		overflow: hidden;
+	}
 
-    .title_b06619 {
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 24px;
-        margin-bottom: 0;
-    }
+	.title_b06619 {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 24px;
+		margin-bottom: 0;
+	}
 
-    .note_b06619 {
-        font-size: 14px;
-        margin-top: 10px;
+	.note_b06619 {
+		font-size: 14px;
+		margin-top: 10px;
 
-        p {
-            margin: 0;
-            line-height: 18px;
-        }
-    }
+		p {
+			margin: 0;
+			line-height: 18px;
+		}
+	}
 }
 
 .image_b06619 {
-    position: relative;
-    background: none;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 32px;
+	position: relative;
+	background: none;
+	height: 100px;
+	width: 100px;
+	margin-bottom: 32px;
 
-    @include status.discordSpinner;
+	@include status.discordSpinner;
 
-    &::after {
-        background:
-            radial-gradient(farthest-side, var(--status-danger) 94%, #0000) top/40% 20% no-repeat,
-            conic-gradient(#0000 var(--percent), var(--status-danger));
-        animation:
-            discordSpinnerRotateError calc(2.88s / 2) cubic-bezier(0.5, 0, 0.5, 1) alternate infinite,
-            discordSpinnerTailError 2.88s cubic-bezier(0.5, 0, 0.5, 1) infinite,
-            discordSpinnerFade calc(2.88s / 2) cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
-    }
+	&::after {
+		background:
+			radial-gradient(farthest-side, var(--status-danger) 94%, #0000) top/40% 20% no-repeat,
+			conic-gradient(#0000 var(--percent), var(--status-danger));
+		animation:
+			discordSpinnerRotateError calc(2.88s / 2) cubic-bezier(0.5, 0, 0.5, 1) alternate infinite,
+			discordSpinnerTailError 2.88s cubic-bezier(0.5, 0, 0.5, 1) infinite,
+			discordSpinnerFade calc(2.88s / 2) cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+	}
 }
 
 @property --percent {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 20%;
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 20%;
 }
 
 @keyframes discordSpinnerTailError {
-    25% {
-        --percent: 20%;
-    }
+	25% {
+		--percent: 20%;
+	}
 
-    100% {
-        --percent: 100%;
-    }
+	100% {
+		--percent: 100%;
+	}
 }
 
-
 @keyframes discordSpinnerRotateError {
-    100% {
-        transform: rotate(0.5turn)
-    }
+	100% {
+		transform: rotate(0.5turn);
+	}
 }

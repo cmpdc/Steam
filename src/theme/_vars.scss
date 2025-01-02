@@ -1,365 +1,430 @@
 // User Variables
 :root {
-    // Color
-    --hue-shift: 0;
+	// Color
+	--hue-shift: 0;
 
-    // Size
-    --content-width: 940px;
-    --message-width: 640px;
+	// Size
+	--content-width: 940px;
+	--message-width: 640px;
 
-    // Font
-    --custom-font: "gg sans";
-    --custom-font-code: monospace;
+	// Font
+	--custom-font: "gg sans";
+	--custom-font-code: monospace;
 }
 
 :root {
-    // Color
-    --accent-hue: calc(205 + var(--hue-shift));
-    --accent-saturation: 100%;
-    --accent-brightness: 55%;
+	// Color
+	--accent-hue: calc(205 + var(--hue-shift));
+	--accent-saturation: 100%;
+	--accent-brightness: 55%;
 
-    // Size
-    --app-gutter: 24px;
-    --content-gutter: 16px;
-    --content-inner-width: calc(var(--content-width) - 284px);
+	// Size
+	--app-gutter: 24px;
+	--content-gutter: 16px;
+	--content-inner-width: calc(var(--content-width) - 284px);
 
-    // Font
-    --font-primary: var(--custom-font), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-display: var(--custom-font), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-code: var(--custom-font-code), monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	// Font
+	--font-primary: var(--custom-font), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-display: var(--custom-font), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-code: var(--custom-font-code), monospace, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+		"DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
 .theme-dark,
 .theme-light {
-    --modal-background: radial-gradient(circle at top left, hsl(calc(var(--accent-hue) + 12) calc(var(--saturation-factor, 1)*10.8%) 32.5%/0.4) 0%, hsl(calc(var(--accent-hue) + 14) calc(var(--saturation-factor, 1)*10.2%) 32.7%/0) 60%), hsl(calc(var(--accent-hue) + 15) calc(var(--saturation-factor, 1)*10.8%) 16.3%);
-    --text-muted: hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1)*6.9%) 57.5%);
-    --header-secondary: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1)*5.2%) 73.5%);
+	--modal-background: radial-gradient(
+			circle at top left,
+			hsl(calc(var(--accent-hue) + 12) calc(var(--saturation-factor, 1) * 10.8%) 32.5%/0.4) 0%,
+			hsl(calc(var(--accent-hue) + 14) calc(var(--saturation-factor, 1) * 10.2%) 32.7%/0) 60%
+		),
+		hsl(calc(var(--accent-hue) + 15) calc(var(--saturation-factor, 1) * 10.8%) 16.3%);
+	--text-muted: hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1) * 6.9%) 57.5%);
+	--header-secondary: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1) * 5.2%) 73.5%);
 }
 
 .theme-dark {
-    --titlebar-height: 36px;
+	--titlebar-height: 36px;
 
-    --store-sidebar-background: linear-gradient(to right, rgb(0 0 0/.2) 0%, rgb(0 0 0/.5) 100%);
-    --code-background: hsl(calc(var(--accent-hue) - 2) calc(var(--saturation-factor, 1)*27.6%) 11.4%);
+	--store-sidebar-background: linear-gradient(to right, rgb(0 0 0/0.2) 0%, rgb(0 0 0/0.5) 100%);
+	--code-background: hsl(calc(var(--accent-hue) - 2) calc(var(--saturation-factor, 1) * 27.6%) 11.4%);
 
-    --contextmenu-background: var(--background-accent);
-    --contextmenu-shadow: 3px 3px 5px -3px #000;
-    --contextmenu-text: hsl(calc(var(--accent-hue) - 5) calc(var(--saturation-factor, 1)*4.5%) 86.9%);
-    --contextmenu-text-hover: hsl(calc(var(--accent-hue) + 17) calc(var(--saturation-factor, 1)*17.9%) 11%);
-    --contextmenu-gradient:
-        linear-gradient(90deg,
-            hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*100%) 56.5%/.1) 1.89%,
-            hsl(calc(var(--accent-hue) + 35) calc(var(--saturation-factor, 1)*1%) 19.8%/0) 50%),
-        linear-gradient(180deg,
-            hsl(calc(var(--accent-hue) + 28) calc(var(--saturation-factor, 1)*4.9%) 35.9%) 11.6%,
-            hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*17.1%) 27.5%) 54.73%,
-            hsl(calc(var(--accent-hue) + 27) calc(var(--saturation-factor, 1)*8.3%) 18.8%) 100%);
+	--contextmenu-background: var(--background-accent);
+	--contextmenu-shadow: 3px 3px 5px -3px #000;
+	--contextmenu-text: hsl(calc(var(--accent-hue) - 5) calc(var(--saturation-factor, 1) * 4.5%) 86.9%);
+	--contextmenu-text-hover: hsl(calc(var(--accent-hue) + 17) calc(var(--saturation-factor, 1) * 17.9%) 11%);
+	--contextmenu-gradient: linear-gradient(
+			90deg,
+			hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 100%) 56.5%/0.1) 1.89%,
+			hsl(calc(var(--accent-hue) + 35) calc(var(--saturation-factor, 1) * 1%) 19.8%/0) 50%
+		),
+		linear-gradient(
+			180deg,
+			hsl(calc(var(--accent-hue) + 28) calc(var(--saturation-factor, 1) * 4.9%) 35.9%) 11.6%,
+			hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 17.1%) 27.5%) 54.73%,
+			hsl(calc(var(--accent-hue) + 27) calc(var(--saturation-factor, 1) * 8.3%) 18.8%) 100%
+		);
 
-    --quote-color: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*19.2%) 41.8%);
-    --store-divider: linear-gradient(to right, hsl(calc(var(--accent-hue) - 4), calc(var(--saturation-factor, 1)*41.1%), 38.6%) 0%, transparent 100%);
+	--quote-color: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 19.2%) 41.8%);
+	--store-divider: linear-gradient(
+		to right,
+		hsl(calc(var(--accent-hue) - 4), calc(var(--saturation-factor, 1) * 41.1%), 38.6%) 0%,
+		transparent 100%
+	);
 
-    --text-linkHi: hsl(calc(var(--accent-hue) - 8) calc(var(--saturation-factor, 1)*88%) 70%);
-    --text-linkHi-hover: hsl(calc(var(--accent-hue) - 8) calc(var(--saturation-factor, 1)*100%) 85%);
+	--text-linkHi: hsl(calc(var(--accent-hue) - 8) calc(var(--saturation-factor, 1) * 88%) 70%);
+	--text-linkHi-hover: hsl(calc(var(--accent-hue) - 8) calc(var(--saturation-factor, 1) * 100%) 85%);
 
-    --app-bg: hsl(213 35% 16%);
-    --banner-lightblue: linear-gradient(135deg, hsl(calc(var(--accent-hue) - 10) calc(var(--saturation-factor, 1)*2%) 38.8%/.3) 0%, hsl(calc(var(--accent-hue) - 2) calc(var(--saturation-factor, 1)*100%) 94.3%/.3) 100%);
-    --banner-lightblue-hover: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*40.9%) 43.1%);
-    --banner-lightblue-input: hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1)*21.8%) 17.1%);
-    --banner-blue: linear-gradient(135deg, hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*40.7%) 42.4%/.4) 10%, hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*86.6%) 67.8%/.4) 100%);
-    --banner-blue-child: linear-gradient(135deg, hsl(calc(var(--accent-hue) - 2) calc(var(--saturation-factor, 1)*41.2%) 10%/.4) 10%, rgb(0 0 0/.4) 100%);
-    --banner-shadow: 2px 2px 15px rgb(0 0 0/.4);
-    --banner-green: linear-gradient(60deg, rgb(117 176 34/.7) 5%, rgb(88 138 27/.6) 95%);
-    --banner-yellow: linear-gradient(135deg, rgb(130 114 81/.5) 0%, rgb(226 197 139/.5) 100%);
-    // --banner-purple: linear-gradient(135deg,  rgba(72,23,70,0.8) 10%,rgba(165,84,177,0.8) 100%);
-    // --banner-pink: linear-gradient( 60deg, #9d2f52 5%,#ce7e94 95%);
-    // --banner-verylightblue: linear-gradient(135deg,  rgba(172,219,245,0.5) 0%,rgba(255,255,255,0.5) 100%);
-    // --banner-neargrey: linear-gradient(135deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
-    --banner-red: linear-gradient(135deg, hsl(0 67.3% 22.4%/.6) 5%, hsl(0 67.8% 51.4%/.7) 95%);
+	--app-bg: hsl(213 35% 16%);
+	--banner-lightblue: linear-gradient(
+		135deg,
+		hsl(calc(var(--accent-hue) - 10) calc(var(--saturation-factor, 1) * 2%) 38.8%/0.3) 0%,
+		hsl(calc(var(--accent-hue) - 2) calc(var(--saturation-factor, 1) * 100%) 94.3%/0.3) 100%
+	);
+	--banner-lightblue-hover: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 40.9%) 43.1%);
+	--banner-lightblue-input: hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1) * 21.8%) 17.1%);
+	--banner-blue: linear-gradient(
+		135deg,
+		hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 40.7%) 42.4%/0.4) 10%,
+		hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 86.6%) 67.8%/0.4) 100%
+	);
+	--banner-blue-child: linear-gradient(
+		135deg,
+		hsl(calc(var(--accent-hue) - 2) calc(var(--saturation-factor, 1) * 41.2%) 10%/0.4) 10%,
+		rgb(0 0 0/0.4) 100%
+	);
+	--banner-shadow: 2px 2px 15px rgb(0 0 0/0.4);
+	--banner-green: linear-gradient(60deg, rgb(117 176 34/0.7) 5%, rgb(88 138 27/0.6) 95%);
+	--banner-yellow: linear-gradient(135deg, rgb(130 114 81/0.5) 0%, rgb(226 197 139/0.5) 100%);
+	// --banner-purple: linear-gradient(135deg,  rgba(72,23,70,0.8) 10%,rgba(165,84,177,0.8) 100%);
+	// --banner-pink: linear-gradient( 60deg, #9d2f52 5%,#ce7e94 95%);
+	// --banner-verylightblue: linear-gradient(135deg,  rgba(172,219,245,0.5) 0%,rgba(255,255,255,0.5) 100%);
+	// --banner-neargrey: linear-gradient(135deg,  rgba(68,75,84,1) 0%,rgba(91,98,108,1) 100%);
+	--banner-red: linear-gradient(135deg, hsl(0 67.3% 22.4%/0.6) 5%, hsl(0 67.8% 51.4%/0.7) 95%);
 }
 
 :root,
 .theme-dark {
+	--modal-popout-message: hsl(calc(var(--accent-hue) + 18) calc(var(--saturation-factor, 1) * 12.3%) 22.4%);
+	--background-secondary: hsl(calc(var(--accent-hue) + 17) calc(var(--saturation-factor, 1) * 10.6%) 18.4%);
+	--background-tertiary: hsl(calc(var(--accent-hue) + 9) calc(var(--saturation-factor, 1) * 23.3%) 11.8%);
 
-    --modal-popout-message: hsl(calc(var(--accent-hue) + 18) calc(var(--saturation-factor, 1)*12.3%) 22.4%);
-    --background-secondary: hsl(calc(var(--accent-hue) + 17) calc(var(--saturation-factor, 1)*10.6%) 18.4%);
-    --background-tertiary: hsl(calc(var(--accent-hue) + 9) calc(var(--saturation-factor, 1)*23.3%) 11.8%);
+	--interactive-normal: hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1) * 7%) 57%);
+	--interactive-hover: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1) * 5%) 74%);
 
-    --interactive-normal: hsl(calc(var(--accent-hue) + 7) calc(var(--saturation-factor, 1)*7%) 57%);
-    --interactive-hover: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1)*5%) 74%);
+	--background-modifier-hover: hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 24%) 68%/0.3);
+	--background-modifier-active: var(--background-modifier-hover);
 
-    --background-modifier-hover: hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*24%) 68%/0.3);
-    --background-modifier-active: var(--background-modifier-hover);
+	--message-background-gradient-blue: linear-gradient(135deg, hsl(var(--accent-hue) 23.2% 41.4%/0.5) 0%, hsl(var(--accent-hue) 60% 71.6%/0.5) 100%);
 
-    --message-background-gradient-blue: linear-gradient(135deg, hsl(var(--accent-hue) 23.2% 41.4%/.5) 0%, hsl(var(--accent-hue) 60% 71.6%/.5) 100%);
+	--darker-grey: hsl(calc(var(--accent-hue) + 15) calc(var(--saturation-factor, 1) * 8.6%) 13.7%);
+	--modal-footer-background: none;
+	--modal-shadow: 1px 3px 14px rgb(0 0 0/0.65);
+	--background-accent-25: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1) * 13.5%) 27.6%/0.25);
+	--background-accent-75: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1) * 13.5%) 27.6%/0.75);
+	--background-accent: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1) * 13.5%) 27.6%);
+	--background-accent-hover: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1) * 8.8%) 44.3%);
+	--background-modifier-accent: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1) * 8.8%) 44.3%/0.3);
+	--background-modifier-accent-compat: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1) * 8.8%) 44.3%/0.3);
+	--background-modifier-accent-dark: hsl(calc(var(--accent-hue) + 19) calc(var(--saturation-factor, 1) * 13.6%) 15.9%);
+	--header-primary: #fff;
+	--scroller-color: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1) * 10.7%) 29.4%);
+	--scroller-hover-color: hsl(calc(var(--accent-hue) + 15) calc(var(--saturation-factor, 1) * 5.5%) 32.4%);
+	--channels-category: hsl(calc(var(--accent-hue) + 2) calc(var(--saturation-factor, 1) * 23.5%) 42.5%);
+	--channels-default: hsl(calc(var(--accent-hue) - 1) calc(var(--saturation-factor, 1) * 18.7%) 52.7%);
+	--channels-default-hover: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 88.6%) 67.8%);
+	--channel-icon: var(--channels-category);
+	--channel-selected: radial-gradient(
+		circle at 0%,
+		hsl(calc(var(--accent-hue) + 2) calc(var(--saturation-factor, 1) * 23.5%) 42.5%/0) 20%,
+		hsl(calc(var(--accent-hue) + 2) calc(var(--saturation-factor, 1) * 23.5%) 42.5%/0.25) 100%
+	);
+	--tooltip-background: hsl(calc(var(--accent-hue) + 45) calc(var(--saturation-factor, 1) * 5.5%) 42.7%);
+	--tooltip-text: hsl(calc(var(--accent-hue) + 25) calc(var(--saturation-factor, 1) * 10.7%) 89%);
+	--text-lighter: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1) * 12.3%) 88.8%);
+	// Button
+	--header-button-background: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1) * 8.8%) 44.3%/0.2);
+	--sidebar-btn-brand: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 87.7%) 68.2%/0.1);
+	--btn-brand: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 87.7%) 68.2%/0.2);
+	--btn-brand-border: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 87.7%) 68.2%/0.15);
+	--btn-brand-text: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 87.7%) 68.2%);
+	--btn-brand-hover: linear-gradient(
+		-60deg,
+		hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 40.9%) 43.1%) 5%,
+		var(--btn-brand-text) 95%
+	);
 
-    --darker-grey: hsl(calc(var(--accent-hue) + 15) calc(var(--saturation-factor, 1)*8.6%) 13.7%);
-    --modal-footer-background: none;
-    --modal-shadow: 1px 3px 14px rgb(0 0 0/.65);
-    --background-accent-25: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1)*13.5%) 27.6%/.25);
-    --background-accent-75: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1)*13.5%) 27.6%/.75);
-    --background-accent: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1)*13.5%) 27.6%);
-    --background-accent-hover: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1)*8.8%) 44.3%);
-    --background-modifier-accent: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1)*8.8%) 44.3%/.3);
-    --background-modifier-accent-compat: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1)*8.8%) 44.3%/.3);
-    --background-modifier-accent-dark: hsl(calc(var(--accent-hue) + 19) calc(var(--saturation-factor, 1)*13.6%) 15.9%);
-    --header-primary: #fff;
-    --scroller-color: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1)*10.7%) 29.4%);
-    --scroller-hover-color: hsl(calc(var(--accent-hue) + 15) calc(var(--saturation-factor, 1)*5.5%) 32.4%);
-    --channels-category: hsl(calc(var(--accent-hue) + 2) calc(var(--saturation-factor, 1)*23.5%) 42.5%);
-    --channels-default: hsl(calc(var(--accent-hue) - 1) calc(var(--saturation-factor, 1)*18.7%) 52.7%);
-    --channels-default-hover: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*88.6%) 67.8%);
-    --channel-icon: var(--channels-category);
-    --channel-selected: radial-gradient(circle at 0%, hsl(calc(var(--accent-hue) + 2) calc(var(--saturation-factor, 1)*23.5%) 42.5%/0) 20%, hsl(calc(var(--accent-hue) + 2) calc(var(--saturation-factor, 1)*23.5%) 42.5%/.25) 100%);
-    --tooltip-background: hsl(calc(var(--accent-hue) + 45) calc(var(--saturation-factor, 1)*5.5%) 42.7%);
-    --tooltip-text: hsl(calc(var(--accent-hue) + 25) calc(var(--saturation-factor, 1)*10.7%) 89%);
-    --text-lighter: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1)*12.3%) 88.8%);
-    // Button
-    --header-button-background: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1)*8.8%) 44.3%/.2);
-    --sidebar-btn-brand: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*87.7%) 68.2%/.1);
-    --btn-brand: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*87.7%) 68.2%/.2);
-    --btn-brand-border: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*87.7%) 68.2%/.15);
-    --btn-brand-text: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*87.7%) 68.2%);
-    --btn-brand-hover: linear-gradient(-60deg, hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*40.9%) 43.1%) 5%, var(--btn-brand-text) 95%);
+	--btn-grey: hsl(calc(var(--accent-hue) + 17) calc(var(--saturation-factor, 1) * 9.9%) 25.7%/0.5);
+	--btn-grey-hover: hsl(calc(var(--accent-hue) + 12) calc(var(--saturation-factor, 1) * 11.4%) 31%);
+	--btn-grey-hover-light: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1) * 10.7%) 29.4%/0.6);
+	--btn-grey-boxshadow: 0 8px 16px 0 rgb(0 0 0/0.3);
 
-    --btn-grey: hsl(calc(var(--accent-hue) + 17) calc(var(--saturation-factor, 1)*9.9%) 25.7%/.5);
-    --btn-grey-hover: hsl(calc(var(--accent-hue) + 12) calc(var(--saturation-factor, 1)*11.4%) 31.0%);
-    --btn-grey-hover-light: hsl(calc(var(--accent-hue) + 13) calc(var(--saturation-factor, 1)*10.7%) 29.4%/.6);
-    --btn-grey-boxshadow: 0 8px 16px 0 rgb(0 0 0/.3);
+	--btn-dark: rgb(0 0 0/0.2);
+	--btn-dark-text: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 86.6%) 67.8%);
+	--btn-dark-hover: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1) * 86.6%) 67.8%/0.4);
 
-    --btn-dark: rgb(0 0 0/.2);
-    --btn-dark-text: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*86.6%) 67.8%);
-    --btn-dark-hover: hsl(calc(var(--accent-hue) - 3) calc(var(--saturation-factor, 1)*86.6%) 67.8%/.4);
+	--button-positive-background: var(--gpColor-Green);
+	--button-positive-background-hover: hsl(96 58% 30%);
 
-    --button-positive-background: var(--gpColor-Green);
-    --button-positive-background-hover: hsl(96 58% 30%);
+	--store-tablist-btn: linear-gradient(
+		135deg,
+		hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 39.6%) 39.6%) 0%,
+		hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 41.8%) 31%) 100%
+	);
+	--dropdown-popout-background: hsl(calc(var(--accent-hue) + 12) calc(var(--saturation-factor, 1) * 10.6%) 24.1%);
+	--dropdown-popout-shadow: 0 8px 26px 2px rgb(0 0 0/0.2);
+	--dropdown-popout-hover: hsl(calc(var(--accent-hue) + 11) calc(var(--saturation-factor, 1) * 10.8%) 27.3%);
+	--store-search-border: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1) * 37.8%) 53.3%/0.2);
+	--topbar-item-hover: linear-gradient(
+		90deg,
+		hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 100%) 56.5%/0.25) 0%,
+		hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 100%) 56.5%/0.15) 50%,
+		rgb(50 50 51/0) 100%
+	);
+	--topbar-item-selected: hsl(calc(var(--accent-hue) + 6) calc(var(--saturation-factor, 1) * 100%) 56.1%);
+	--app-background: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1) * 35%) 16%);
+	--store-body-header: hsl(calc(var(--accent-hue) - 9) calc(var(--saturation-factor, 1) * 98.4%) 25.3%);
+	--mention-background: var(--btn-brand);
+	--mention-foreground: var(--btn-brand-text);
 
-    --store-tablist-btn: linear-gradient(135deg, hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*39.6%) 39.6%) 0%, hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*41.8%) 31%) 100%);
-    --dropdown-popout-background: hsl(calc(var(--accent-hue) + 12) calc(var(--saturation-factor, 1)*10.6%) 24.1%);
-    --dropdown-popout-shadow: 0 8px 26px 2px rgb(0 0 0/.2);
-    --dropdown-popout-hover: hsl(calc(var(--accent-hue) + 11) calc(var(--saturation-factor, 1)*10.8%) 27.3%);
-    --store-search-border: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1)*37.8%) 53.3%/.2);
-    --topbar-item-hover: linear-gradient(90deg, hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*100%) 56.5%/.25) 0%, hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*100%) 56.5%/.15) 50%, rgb(50 50 51/0) 100%);
-    --topbar-item-selected: hsl(calc(var(--accent-hue) + 6) calc(var(--saturation-factor, 1)*100%) 56.1%);
-    --app-background: hsl(calc(var(--accent-hue) + 8) calc(var(--saturation-factor, 1)*35%) 16%);
-    --store-body-header: hsl(calc(var(--accent-hue) - 9) calc(var(--saturation-factor, 1)*98.4%) 25.3%);
-    --mention-background: var(--btn-brand);
-    --mention-foreground: var(--btn-brand-text);
+	--info-warning-foreground: var(--gpColor-Yellow);
+	--info-positive-foreground: var(--gpColor-Green);
+	--info-danger-foreground: var(--gpColor-Red);
 
-    --info-warning-foreground: var(--gpColor-Yellow);
-    --info-positive-foreground: var(--gpColor-Green);
-    --info-danger-foreground: var(--gpColor-Red);
+	--text-positive: var(--gpColor-Green);
 
-    --text-positive: var(--gpColor-Green);
-
-    --gpColor-Green: #5ba32b;
-    --gpColor-GreenHi: #59BF40;
-    --gpColor-GreenHi-hsl: 108 49.8% 50.0%;
-    --gpColor-Red: #D94126;
-    --gpColor-Yellow: #FFC82C;
-    --gpColor-Grey: #4f5159;
+	--gpColor-Green: #5ba32b;
+	--gpColor-GreenHi: #59bf40;
+	--gpColor-GreenHi-hsl: 108 49.8% 50%;
+	--gpColor-Red: #d94126;
+	--gpColor-Yellow: #ffc82c;
+	--gpColor-Grey: #4f5159;
 }
 
 #app-mount:has(.themeEditor_c9dda6) {
-    --theme-preview-width: 260px;
+	--theme-preview-width: 260px;
 }
 
 // Settings Icons
 :root {
-    --use-settingsicons: calc(var(--settingsicons, 1) / (var(--settingsicons, 1) + 0.00000000000000000000001));
-    --settingsicons-size: 20px;
+	--use-settingsicons: calc(var(--settingsicons, 1) / (var(--settingsicons, 1) + 0.00000000000000000000001));
+	--settingsicons-size: 20px;
 
-    $icon-path: "https://maendisease.github.io/Steam/illustrations/icns";
-    --settingsicons-default: url(#{$icon-path}/developer.svg);
-    --settingsicons-myaccount: url(#{$icon-path}/account.svg);
-    --settingsicons-profile: url(#{$icon-path}/pencil.svg);
-    --settingsicons-privacy: url(#{$icon-path}/security.svg);
-    --settingsicons-family: url(#{$icon-path}/family.svg);
-    // --settingsicons-apps: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.svg);
-    --settingsicons-sessions: url(#{$icon-path}/remoteplay.svg);
-    // --settingsicons-connections: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/connections.svg);
-    --settingsicons-friendrequests: url(#{$icon-path}/friends&chat.svg);
-    // --settingsicons-nitro: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/nitro.svg);
-    // --settingsicons-boosts: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/boosts.svg);
-    --settingsicons-subscriptions: url(#{$icon-path}/star.svg);
-    // --settingsicons-gifts: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/gift.svg);
-    --settingsicons-billing: url(#{$icon-path}/funds.svg);
-    // --settingsicons-appearance: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/appearance.svg);
-    // --settingsicons-accessibility: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/accessibility.svg);
-    --settingsicons-voice: url(#{$icon-path}/voice.svg);
-    // --settingsicons-powermode: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/party.svg);
-    --settingsicons-text: url(#{$icon-path}/textbubble.svg);
-    --settingsicons-notifications: url(#{$icon-path}/notifications.svg);
-    // --settingsicons-keybinds: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/keybinds.svg);
-    // --settingsicons-language: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/language.svg);
-    --settingsicons-windows: url(#{$icon-path}/library.svg);
-    --settingsicons-streamermode: url(#{$icon-path}/broadcast.svg);
-    --settingsicons-advanced: url(#{$icon-path}/developer.svg);
-    // --settingsicons-activityprivacy: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/activityprivacy.svg);
-    --settingsicons-games: url(#{$icon-path}/controller.svg);
-    --settingsicons-overlay: url(#{$icon-path}/ingame.svg);
-    --settingsicons-bd-settings: url(#{$icon-path}/settings.svg);
-    --settingsicons-bd-changelog: url(#{$icon-path}/cloud.svg);
-    // --settingsicons-bd-customcss: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/custom.svg);
-    // --settingsicons-bd-plugins: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/plugins.svg);
-    // --settingsicons-bd-themes: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themes.svg);
-    // --settingsicons-bd-pluginrepo: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/pluginrepo.svg);
-    // --settingsicons-bd-themerepo: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themerepo.svg);
-    --settingsicons-changelog: url(#{$icon-path}/clock.svg);
-    // --settingsicons-hypesquad: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/hypesquad.svg);
-    // --settingsicons-experiments: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/experiments.svg);
-    --settingsicons-developer: url(#{$icon-path}/developer.svg);
-    // --settingsicons-hotspots: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/hotspots.svg);
-    // --settingsicons-dismissable: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/dismissable.svg);
-    // --settingsicons-paymentmodals: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/paymentmodals.svg);
-    // --settingsicons-textplayground: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/textcomponent.svg);
-    // --settingsicons-textcomponent: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/textcomponent.svg);
-    // --settingsicons-logout: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/logout.svg);
+	$icon-path: "https://maendisease.github.io/Steam/illustrations/icns";
+	--settingsicons-default: url(#{$icon-path}/developer.svg);
+	--settingsicons-myaccount: url(#{$icon-path}/account.svg);
+	--settingsicons-profile: url(#{$icon-path}/pencil.svg);
+	--settingsicons-privacy: url(#{$icon-path}/security.svg);
+	--settingsicons-family: url(#{$icon-path}/family.svg);
+	// --settingsicons-apps: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.svg);
+	--settingsicons-sessions: url(#{$icon-path}/remoteplay.svg);
+	// --settingsicons-connections: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/connections.svg);
+	--settingsicons-friendrequests: url(#{$icon-path}/friends&chat.svg);
+	// --settingsicons-nitro: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/nitro.svg);
+	// --settingsicons-boosts: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/boosts.svg);
+	--settingsicons-subscriptions: url(#{$icon-path}/star.svg);
+	// --settingsicons-gifts: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/gift.svg);
+	--settingsicons-billing: url(#{$icon-path}/funds.svg);
+	// --settingsicons-appearance: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/appearance.svg);
+	// --settingsicons-accessibility: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/accessibility.svg);
+	--settingsicons-voice: url(#{$icon-path}/voice.svg);
+	// --settingsicons-powermode: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/party.svg);
+	--settingsicons-text: url(#{$icon-path}/textbubble.svg);
+	--settingsicons-notifications: url(#{$icon-path}/notifications.svg);
+	// --settingsicons-keybinds: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/keybinds.svg);
+	// --settingsicons-language: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/language.svg);
+	--settingsicons-windows: url(#{$icon-path}/library.svg);
+	--settingsicons-streamermode: url(#{$icon-path}/broadcast.svg);
+	--settingsicons-advanced: url(#{$icon-path}/developer.svg);
+	// --settingsicons-activityprivacy: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/activityprivacy.svg);
+	--settingsicons-games: url(#{$icon-path}/controller.svg);
+	--settingsicons-overlay: url(#{$icon-path}/ingame.svg);
+	--settingsicons-bd-settings: url(#{$icon-path}/settings.svg);
+	--settingsicons-bd-changelog: url(#{$icon-path}/cloud.svg);
+	// --settingsicons-bd-customcss: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/custom.svg);
+	// --settingsicons-bd-plugins: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/plugins.svg);
+	// --settingsicons-bd-themes: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themes.svg);
+	// --settingsicons-bd-pluginrepo: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/pluginrepo.svg);
+	// --settingsicons-bd-themerepo: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themerepo.svg);
+	--settingsicons-changelog: url(#{$icon-path}/clock.svg);
+	// --settingsicons-hypesquad: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/hypesquad.svg);
+	// --settingsicons-experiments: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/experiments.svg);
+	--settingsicons-developer: url(#{$icon-path}/developer.svg);
+	// --settingsicons-hotspots: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/hotspots.svg);
+	// --settingsicons-dismissable: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/dismissable.svg);
+	// --settingsicons-paymentmodals: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/paymentmodals.svg);
+	// --settingsicons-textplayground: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/textcomponent.svg);
+	// --settingsicons-textcomponent: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/textcomponent.svg);
+	// --settingsicons-logout: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/logout.svg);
 }
 
-.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > div:first-child > .sectionTitle_a6ae9b:first-child .title_c46f6a::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > div:first-child > h2.title_c46f6a::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > .sectionTitle_a206c7::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d.repoHeader_2KfNvH .title_c46f6a::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnWide_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > .settingsTabBar_f62afd:first-child::before, .standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > *:first-child > .settingsTabBar_d576e9::before {
-    display: none;
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94)
+	.contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs)
+	div:first-child
+	> div:first-child
+	> .sectionTitle_a6ae9b:first-child
+	.title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94)
+	.contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs)
+	div:first-child
+	> div:first-child
+	> h2.title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94)
+	.contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs)
+	div:first-child
+	> .sectionTitle_a206c7::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d.repoHeader_2KfNvH .title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnWide_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94)
+	.contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs)
+	> .settingsTabBar_f62afd:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94)
+	.contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs)
+	> *:first-child
+	> .settingsTabBar_d576e9::before {
+	display: none;
 }
 // Settings Modal
 :root {
-    --settingsmodalbackground: transparent;
-    --settingswidth: 850;
+	--settingsmodalbackground: transparent;
+	--settingswidth: 850;
 	--settingsheight: 80;
 
-    --settingswidthpx: calc(var(--settingswidth) * 1px);
+	--settingswidthpx: calc(var(--settingswidth) * 1px);
 }
 
 #app-mount .contentRegion_c25c6d {
-    flex: 1 1 100%;
+	flex: 1 1 100%;
 }
 
 // HorizontalServerList
 :root {
-    --server-size: 28px;
-    --HSL-server-spacing: 10px;
-    --HSL-server-direction: column;
+	--server-size: 28px;
+	--HSL-server-spacing: 10px;
+	--HSL-server-direction: column;
 }
 
 // RadialStatus
 :root {
-    --rs-small-spacing: 0;
-    --rs-medium-spacing: 0;
-    --rs-large-spacing: 0;
+	--rs-small-spacing: 0;
+	--rs-medium-spacing: 0;
+	--rs-large-spacing: 0;
 
-    --rs-small-width: 2px;
-    --rs-medium-width: 2px;
-    --rs-large-width: 2px;
+	--rs-small-width: 2px;
+	--rs-medium-width: 2px;
+	--rs-large-width: 2px;
 
-    --rs-avatar-shape: 0%;
+	--rs-avatar-shape: 0%;
 
-    --rs-online-color: var(--gpColor-Green);
-    --rs-idle-color: var(--gpColor-Yellow);
-    --rs-dnd-color: var(--gpColor-Red);
-    --rs-offline-color: var(--gpColor-Grey);
-    --rs-streaming-color: #643da7;
-    --rs-invisible-color: var(--gpColor-Grey);
-    --rs-phone-color: var(--rs-online-color);
+	--rs-online-color: var(--gpColor-Green);
+	--rs-idle-color: var(--gpColor-Yellow);
+	--rs-dnd-color: var(--gpColor-Red);
+	--rs-offline-color: var(--gpColor-Grey);
+	--rs-streaming-color: #643da7;
+	--rs-invisible-color: var(--gpColor-Grey);
+	--rs-phone-color: var(--rs-online-color);
 
-    --rs-phone-visible: none;
+	--rs-phone-visible: none;
 }
 
 :root {
-    --brand-experiment: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness));
-    --brand-experiment-100: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 98%);
-    --brand-experiment-130: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 93.2%);
-    --brand-experiment-160: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 88.3%);
-    --brand-experiment-200: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 83.5%);
-    --brand-experiment-230: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 78.7%);
-    --brand-experiment-260: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 73.8%);
-    --brand-experiment-300: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 69%);
-    --brand-experiment-330: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 64.2%);
-    --brand-experiment-360: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 59.3%);
-    --brand-experiment-400: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 54.5%);
-    --brand-experiment-430: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 49.7%);
-    --brand-experiment-460: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), 44.8%);
-    --brand-experiment-500: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness));
-    --brand-experiment-530: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*63.8%), 36.9%);
-    --brand-experiment-560: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*51%), 33.8%);
-    --brand-experiment-600: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 30.8%);
-    --brand-experiment-630: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 27.7%);
-    --brand-experiment-660: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 24.6%);
-    --brand-experiment-680: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*81%), 30%);
-    --brand-experiment-700: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 21.5%);
-    --brand-experiment-730: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 18.4%);
-    --brand-experiment-760: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 15.3%);
-    --brand-experiment-800: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 12.3%);
-    --brand-experiment-830: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 9.2%);
-    --brand-experiment-860: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 6.1%);
-    --brand-experiment-900: hsl(var(--accent-hue), calc(var(--saturation-factor, 1)*46.6%), 3%);
-    --brand-experiment-05a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.05);
-    --brand-experiment-10a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.1);
-    --brand-experiment-15a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.15);
-    --brand-experiment-20a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.2);
-    --brand-experiment-25a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.25);
-    --brand-experiment-30a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.3);
-    --brand-experiment-35a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.35);
-    --brand-experiment-40a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.4);
-    --brand-experiment-45a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.45);
-    --brand-experiment-50a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.5);
-    --brand-experiment-55a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.55);
-    --brand-experiment-60a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.6);
-    --brand-experiment-65a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.65);
-    --brand-experiment-70a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.7);
-    --brand-experiment-75a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.75);
-    --brand-experiment-80a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.8);
-    --brand-experiment-85a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.85);
-    --brand-experiment-90a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.9);
-    --brand-experiment-95a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1)*var(--accent-saturation)), var(--accent-brightness), 0.95);
+	--brand-experiment: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness));
+	--brand-experiment-100: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 98%);
+	--brand-experiment-130: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 93.2%);
+	--brand-experiment-160: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 88.3%);
+	--brand-experiment-200: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 83.5%);
+	--brand-experiment-230: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 78.7%);
+	--brand-experiment-260: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 73.8%);
+	--brand-experiment-300: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 69%);
+	--brand-experiment-330: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 64.2%);
+	--brand-experiment-360: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 59.3%);
+	--brand-experiment-400: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 54.5%);
+	--brand-experiment-430: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 49.7%);
+	--brand-experiment-460: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), 44.8%);
+	--brand-experiment-500: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness));
+	--brand-experiment-530: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 63.8%), 36.9%);
+	--brand-experiment-560: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 51%), 33.8%);
+	--brand-experiment-600: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 30.8%);
+	--brand-experiment-630: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 27.7%);
+	--brand-experiment-660: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 24.6%);
+	--brand-experiment-680: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 81%), 30%);
+	--brand-experiment-700: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 21.5%);
+	--brand-experiment-730: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 18.4%);
+	--brand-experiment-760: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 15.3%);
+	--brand-experiment-800: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 12.3%);
+	--brand-experiment-830: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 9.2%);
+	--brand-experiment-860: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 6.1%);
+	--brand-experiment-900: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.6%), 3%);
+	--brand-experiment-05a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.05);
+	--brand-experiment-10a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.1);
+	--brand-experiment-15a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.15);
+	--brand-experiment-20a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.2);
+	--brand-experiment-25a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.25);
+	--brand-experiment-30a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.3);
+	--brand-experiment-35a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.35);
+	--brand-experiment-40a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.4);
+	--brand-experiment-45a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.45);
+	--brand-experiment-50a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.5);
+	--brand-experiment-55a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.55);
+	--brand-experiment-60a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.6);
+	--brand-experiment-65a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.65);
+	--brand-experiment-70a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.7);
+	--brand-experiment-75a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.75);
+	--brand-experiment-80a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.8);
+	--brand-experiment-85a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.85);
+	--brand-experiment-90a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.9);
+	--brand-experiment-95a: hsla(var(--accent-hue), calc(var(--saturation-factor, 1) * var(--accent-saturation)), var(--accent-brightness), 0.95);
 
-    --brand-100: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
-    --brand-130: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
-    --brand-160: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
-    --brand-200: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
-    --brand-230: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87%), 91%);
-    --brand-260: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.2%), 88.6%);
-    --brand-300: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
-    --brand-330: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
-    --brand-345: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.2%), 78.8%);
-    --brand-360: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
-    --brand-400: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
-    --brand-430: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
-    --brand-460: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
-    --brand-500: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
-    --brand-530: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
-    --brand-560: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
-    --brand-600: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
-    --brand-630: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
-    --brand-660: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
-    --brand-700: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47%), 25.9%);
-    --brand-730: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
-    --brand-760: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
-    --brand-800: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
-    --brand-830: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
-    --brand-860: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
-    --brand-900: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 50%), 3.1%);
-    --brand-new-100: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
-    --brand-new-130: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
-    --brand-new-160: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
-    --brand-new-200: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
-    --brand-new-230: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87%), 91%);
-    --brand-new-260: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.2%), 88.6%);
-    --brand-new-300: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
-    --brand-new-330: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
-    --brand-new-345: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.2%), 78.8%);
-    --brand-new-360: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
-    --brand-new-400: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
-    --brand-new-430: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
-    --brand-new-460: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
-    --brand-new-500: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
-    --brand-new-530: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
-    --brand-new-560: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
-    --brand-new-600: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
-    --brand-new-630: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
-    --brand-new-660: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
-    --brand-new-700: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47%), 25.9%);
-    --brand-new-730: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
-    --brand-new-760: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
-    --brand-new-800: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
-    --brand-new-830: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
-    --brand-new-860: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
-    --brand-new-900: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 50%), 3.1%);
+	--brand-100: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
+	--brand-130: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
+	--brand-160: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
+	--brand-200: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
+	--brand-230: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87%), 91%);
+	--brand-260: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.2%), 88.6%);
+	--brand-300: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
+	--brand-330: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
+	--brand-345: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.2%), 78.8%);
+	--brand-360: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+	--brand-400: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+	--brand-430: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
+	--brand-460: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
+	--brand-500: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+	--brand-530: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
+	--brand-560: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
+	--brand-600: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
+	--brand-630: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
+	--brand-660: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+	--brand-700: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47%), 25.9%);
+	--brand-730: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+	--brand-760: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
+	--brand-800: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
+	--brand-830: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
+	--brand-860: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
+	--brand-900: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 50%), 3.1%);
+	--brand-new-100: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 77.8%), 98.2%);
+	--brand-new-130: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87.5%), 96.9%);
+	--brand-new-160: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 84.6%), 94.9%);
+	--brand-new-200: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 83.3%), 92.9%);
+	--brand-new-230: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 87%), 91%);
+	--brand-new-260: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.2%), 88.6%);
+	--brand-new-300: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 85.9%);
+	--brand-new-330: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.1%), 81.6%);
+	--brand-new-345: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.2%), 78.8%);
+	--brand-new-360: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
+	--brand-new-400: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+	--brand-new-430: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.7%), 69.8%);
+	--brand-new-460: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.5%), 67.5%);
+	--brand-new-500: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 85.6%), 64.7%);
+	--brand-new-530: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 66.7%), 58.8%);
+	--brand-new-560: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 51.4%), 52.4%);
+	--brand-new-600: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 44.1%);
+	--brand-new-630: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.7%), 38.2%);
+	--brand-new-660: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.1%), 33.3%);
+	--brand-new-700: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47%), 25.9%);
+	--brand-new-730: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.8%), 24.3%);
+	--brand-new-760: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 22.2%);
+	--brand-new-800: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.5%), 19.4%);
+	--brand-new-830: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 47.4%), 14.9%);
+	--brand-new-860: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 46.9%), 9.6%);
+	--brand-new-900: hsl(var(--accent-hue), calc(var(--saturation-factor, 1) * 50%), 3.1%);
 }

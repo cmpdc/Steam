@@ -1,86 +1,84 @@
 .root_f9a4c9 {
+	.guildSidebar_a74b6f {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		background: var(--background-tertiary);
+		padding: 32px;
 
-    .guildSidebar_a74b6f {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        background: var(--background-tertiary);
-        padding: 32px;
+		.guildIcon_a74b6f {
+			border-radius: 2px;
+		}
+	}
 
-        .guildIcon_a74b6f {
-            border-radius: 2px;
-        }
-    }
-
-    .modal_a74b6f {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        background: var(--modal-background);
-    }
+	.modal_a74b6f {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		background: var(--modal-background);
+	}
 }
 
 .root_f9a4c9:has(.modal_a74b6f .requirementContainer_b007eb) {
-    .content_a74b6f {
-        padding-left: 0;
-        padding-right: 0;
-    }
+	.content_a74b6f {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-    .animationAndSparklesContainer_a74b6f {
-        position: absolute;
-        right: 0;
-        top: 16px;
-    }
+	.animationAndSparklesContainer_a74b6f {
+		position: absolute;
+		right: 0;
+		top: 16px;
+	}
 
-    .header_a74b6f {
-        margin: 0 100px 0 0;
-        text-align: left;
-        font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-    }
+	.header_a74b6f {
+		margin: 0 100px 0 0;
+		text-align: left;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 24px;
+	}
 
-    .subheader_a74b6f {
-        margin: 0 100px 32px 0;
-        text-align: left;
-    }
-    
-    .divider_a74b6f {
-        margin: 10px 0;
-    }
+	.subheader_a74b6f {
+		margin: 0 100px 32px 0;
+		text-align: left;
+	}
 
-    .requirementContainer_b007eb {
-        margin-top: 0;
-        border: none;
-        padding: 8px 14px;
-        background: var(--btn-grey);
-        border-radius: 2px;
+	.divider_a74b6f {
+		margin: 10px 0;
+	}
 
-        .sizeSmall_dd4f85 {
-            padding: 0;
-        }
-    }
+	.requirementContainer_b007eb {
+		margin-top: 0;
+		border: none;
+		padding: 8px 14px;
+		background: var(--btn-grey);
+		border-radius: 2px;
+
+		.sizeSmall_dd4f85 {
+			padding: 0;
+		}
+	}
 }
 
 .termsRow_bd5b94 {
-    
-    [style="color: var(--text-muted);"] {
-        --text-muted: var(--brand-experiment);
-        font-weight: 700;
-        font-size: 18px;
-    }
+	[style="color: var(--text-muted);"] {
+		--text-muted: var(--brand-experiment);
+		font-weight: 700;
+		font-size: 18px;
+	}
 }
 
 .termsRowContent_bd5b94[data-text-variant="text-md/normal"] {
-    font-size: 14px;
-    font-weight: 400;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .fieldBackground_bd5b94,
 .fieldBackground_bd5b94:hover:not(:focus) {
-    background: var(--btn-grey);
-    border: none;
-    border-radius: 2px;
+	background: var(--btn-grey);
+	border: none;
+	border-radius: 2px;
 }
 
 .fieldBackground_bd5b94 {
-    padding: 8px 14px;
+	padding: 8px 14px;
 }

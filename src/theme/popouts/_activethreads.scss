@@ -1,24 +1,24 @@
 .popout_c5b389 {
-    background: var(--contextmenu-gradient);
-    padding: 8px 5px 8px 5px;
-    border-radius: 0;
-    box-shadow: 3px 3px 5px -3px #000;
+	background: var(--contextmenu-gradient);
+	padding: 8px 5px 8px 5px;
+	border-radius: 0;
+	box-shadow: 3px 3px 5px -3px #000;
 
-    .row_c5b389 {
-        margin: 0 -5px;
-        border-radius: 0;
-        padding: 6px 15px;
-        font-size: 12px;
-        min-height: 21px;
-        color: var(--contextmenu-text);
+	.row_c5b389 {
+		margin: 0 -5px;
+		border-radius: 0;
+		padding: 6px 15px;
+		font-size: 12px;
+		min-height: 21px;
+		color: var(--contextmenu-text);
 
-        &:hover {
-            background: var(--contextmenu-text);
-            color: var(--contextmenu-text-hover);
+		&:hover {
+			background: var(--contextmenu-text);
+			color: var(--contextmenu-text-hover);
 
-            .timestamp_c5b389 {
-                color: var(--contextmenu-text-hover);
-            }
-        }
-    }
+			.timestamp_c5b389 {
+				color: var(--contextmenu-text-hover);
+			}
+		}
+	}
 }

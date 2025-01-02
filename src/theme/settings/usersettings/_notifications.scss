@@ -1,64 +1,64 @@
 #notifications-tab {
-    [role=radiogroup]:has(.item_eb92a8)[aria-orientation=vertical] {
-        flex-direction: row;
-    }
+	[role="radiogroup"]:has(.item_eb92a8)[aria-orientation="vertical"] {
+		flex-direction: row;
+	}
 
-    [role=radiogroup]:has(.item_eb92a8) .item_eb92a8 {
-        width: 100%;
+	[role="radiogroup"]:has(.item_eb92a8) .item_eb92a8 {
+		width: 100%;
 
-        [data-text-variant="text-md/medium"] {
-            text-align: center;
-        }
-    }
+		[data-text-variant="text-md/medium"] {
+			text-align: center;
+		}
+	}
 
-    .container_ed1d57:has(+.container_ed1d57.soundRow_ec96b2) {
-        margin-bottom: 7px;
-    }
+	.container_ed1d57:has(+ .container_ed1d57.soundRow_ec96b2) {
+		margin-bottom: 7px;
+	}
 
-    .container_ed1d57.soundRow_ec96b2 {
-        margin-bottom: 7px;
+	.container_ed1d57.soundRow_ec96b2 {
+		margin-bottom: 7px;
 
-        .divider_ae36e5 {
-            margin-top: 6px;
-        }
+		.divider_ae36e5 {
+			margin-top: 6px;
+		}
 
-        .title_ed1d57 {
-            overflow: visible;
-        }
+		.title_ed1d57 {
+			overflow: visible;
+		}
 
-        .control_ed1d57 {
-            order: -1;
-            margin-right: 6px;
-        }
+		.control_ed1d57 {
+			order: -1;
+			margin-right: 6px;
+		}
 
-        .soundName_ec96b2 {
-            margin-right: auto;
-        }
+		.soundName_ec96b2 {
+			margin-right: auto;
+		}
 
-        .soundIcon_ec96b2 {
-            opacity: 1;
-            background: var(--btn-grey);
-            margin-right: 4px;
-            height: 36px;
-            width: 36px;
-            border-radius: 2px;
-            color: var(--brand-experiment);
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            transition-property: background, box-shadow;
-            transition-duration: .2s;
-            transition-timing-function: ease-out;
+		.soundIcon_ec96b2 {
+			opacity: 1;
+			background: var(--btn-grey);
+			margin-right: 4px;
+			height: 36px;
+			width: 36px;
+			border-radius: 2px;
+			color: var(--brand-experiment);
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			transition-property: background, box-shadow;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-out;
 
-            &:hover {
-                background: var(--btn-grey-hover);
-                box-shadow: var(--btn-grey-boxshadow);
-            }
+			&:hover {
+				background: var(--btn-grey-hover);
+				box-shadow: var(--btn-grey-boxshadow);
+			}
 
-            .icon_ec96b2 {
-                width: 18px;
-                height: 18px;
-            }
-        }
-    }
+			.icon_ec96b2 {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
 }

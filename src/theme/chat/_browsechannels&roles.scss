@@ -1,151 +1,146 @@
 #app-mount {
-
-    .emptyPage_c6b11b,
-    .scrollerContainer_c6b11b {
-        background: none;
-    }
+	.emptyPage_c6b11b,
+	.scrollerContainer_c6b11b {
+		background: none;
+	}
 }
 
 .chat_a7d72e .container_f1fd9c {
-    .tabBar_f1fd9c {
-        padding: 0;
-        margin: 10px 0 10px 0;
-        gap: 0;
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        border-radius: 3px;
-        background: rgb(0 0 0/.2);
-        border: 1px solid #000;
-        box-shadow: 1px 1px 0 0 var(--store-search-border);
+	.tabBar_f1fd9c {
+		padding: 0;
+		margin: 10px 0 10px 0;
+		gap: 0;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		border-radius: 3px;
+		background: rgb(0 0 0/0.2);
+		border: 1px solid #000;
+		box-shadow: 1px 1px 0 0 var(--store-search-border);
 
-        $tabCount: 2;
+		$tabCount: 2;
 
-        @for $i from 1 through $tabCount {
+		@for $i from 1 through $tabCount {
+			&:has(.item_a0:nth-child(#{$i}):last-child) {
+				--btn-count: #{$i};
+			}
 
-            &:has(.item_a0:nth-child(#{$i}):last-child) {
-                --btn-count: #{$i};
-            }
+			$i: #{$i + 1};
+		}
 
-            $i: #{$i+1};
-        }
+		@for $i from 2 through $tabCount {
+			&:has([aria-selected="true"]:nth-child(#{$i})):before {
+				translate: #{($i - 1) + "00%"};
+			}
 
-        @for $i from 2 through $tabCount {
+			$i: #{$i + 1};
+		}
 
-            &:has([aria-selected="true"]:nth-child(#{$i})):before {
-                translate: #{($i - 1) + "00%"};
-            }
+		.item_a0 {
+			background: none;
+			margin: 0;
+			display: flex;
+			flex: 0 1 calc(100% / var(--btn-count));
+			justify-content: center;
 
-            $i: #{$i+1};
-        }
+			&:not([aria-selected="true"]):hover {
+				background: hsl(var(--accent-hue) calc(var(--saturation-factor, 1) * 40%) 23%/0.4);
+			}
 
-        .item_a0 {
-            background: none;
-            margin: 0;
-            display: flex;
-            flex: 0 1 calc(100% / var(--btn-count));
-            justify-content: center;
+			border-bottom: none;
+			padding: 0;
 
-            &:not([aria-selected="true"]):hover {
-                background: hsl(var(--accent-hue) calc(var(--saturation-factor, 1)*40%) 23%/.4);
-            }
+			height: 34px;
+			padding: 8px 14px;
+			font-size: 14px;
+			font-weight: 400;
+			box-sizing: border-box;
+		}
 
-            border-bottom: none;
-            padding: 0;
-
-            height: 34px;
-            padding: 8px 14px;
-            font-size: 14px;
-            font-weight: 400;
-            box-sizing: border-box;
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: calc(100% / var(--btn-count));
-            background: var(--store-tablist-btn);
-            transition: translate .2s ease;
-            border-radius: 3px;
-        }
-    }
+		&::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: calc(100% / var(--btn-count));
+			background: var(--store-tablist-btn);
+			transition: translate 0.2s ease;
+			border-radius: 3px;
+		}
+	}
 }
 
 .chat_a7d72e.scrollerContainer_c6b11b {
-    .scroller_c6b11b {
-        padding: 0 !important;
-        box-sizing: content-box;
+	.scroller_c6b11b {
+		padding: 0 !important;
+		box-sizing: content-box;
 
-        .pageBody_c6b11b {
-            padding-right: 0;
-            gap: 0;
+		.pageBody_c6b11b {
+			padding-right: 0;
+			gap: 0;
 
-            >div:first-child:not([class]) {
-                background: rgb(0 0 0/.4);
-                padding: 20px;
+			> div:first-child:not([class]) {
+				background: rgb(0 0 0/0.4);
+				padding: 20px;
 
-                h2 {
-                    font-weight: 400;
-                }
-            }
-        }
-    }
+				h2 {
+					font-weight: 400;
+				}
+			}
+		}
+	}
 
-    .profile_c6b11b {
+	.profile_c6b11b {
+		> h2,
+		> [data-text-variant="text-xs/normal"] {
+			background: var(--store-sidebar-background);
+			background-color: rgb(0 0 0/0.2);
+			padding-left: 18px;
+			padding-right: 18px;
+		}
 
-        >h2,
-        >[data-text-variant="text-xs/normal"] {
-            background: var(--store-sidebar-background);
-            background-color: rgb(0 0 0/.2);
-            padding-left: 18px;
-            padding-right: 18px;
-        }
+		> h2 {
+			padding-top: 10px;
+			font-weight: 400;
+		}
 
-        >h2 {
-            padding-top: 10px;
-            font-weight: 400;
-        }
+		> [data-text-variant="text-xs/normal"] {
+			padding-bottom: 10px;
+		}
+	}
 
-        >[data-text-variant="text-xs/normal"] {
-            padding-bottom: 10px;
-        }
+	.profileCard_c6b11b {
+		margin-top: 0;
+		width: 308px;
+		background: var(--store-sidebar-background);
+		border-radius: 0;
+		box-sizing: border-box;
 
-    }
-
-    .profileCard_c6b11b {
-        margin-top: 0;
-        width: 308px;
-        background: var(--store-sidebar-background);
-        border-radius: 0;
-        box-sizing: border-box;
-
-        .role_c6b11b {
-            background: rgb(0 0 0/.3);
-            border-radius: 3px;
-        }
-    }
+		.role_c6b11b {
+			background: rgb(0 0 0/0.3);
+			border-radius: 3px;
+		}
+	}
 }
 
 .prompt_c6b11b {
-    gap: 0;
-    padding: 0;
-    border-radius: 0;
-    background: none;
-    margin-top: var(--content-gutter);
+	gap: 0;
+	padding: 0;
+	border-radius: 0;
+	background: none;
+	margin-top: var(--content-gutter);
 
-    .promptTitle_c6b11b {
-        background-color: var(--store-body-header);
-        padding: 10px 20px 10px 20px;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: .03em;
-        text-transform: uppercase;
-    }
+	.promptTitle_c6b11b {
+		background-color: var(--store-body-header);
+		padding: 10px 20px 10px 20px;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
 
-    .promptOptions_c6b11b {
-        background: rgb(0 0 0/.4);
-        padding: 20px;
-    }
+	.promptOptions_c6b11b {
+		background: rgb(0 0 0/0.4);
+		padding: 20px;
+	}
 }

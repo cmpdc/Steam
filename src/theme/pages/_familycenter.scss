@@ -1,35 +1,35 @@
 .containerSidenav_d576e9 {
-    max-width: var(--content-width);
+	max-width: var(--content-width);
 
-    #app-mount & {
-        background: none;
-    }
+	#app-mount & {
+		background: none;
+	}
 }
 
 #activity-tab,
 #requests-tab {
-    &::-webkit-scrollbar {
-        width: 14px;
-        height: 14px;
-    }
+	&::-webkit-scrollbar {
+		width: 14px;
+		height: 14px;
+	}
 
-    &::-webkit-scrollbar-thumb {
-        background-color: var(--scroller-color);
-        min-height: 40px;
-    }
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--scroller-color);
+		min-height: 40px;
+	}
 
-    &::-webkit-scrollbar-track {
-        margin-bottom: 8px;
-    }
+	&::-webkit-scrollbar-track {
+		margin-bottom: 8px;
+	}
 
-    &::-webkit-scrollbar-thumb,
-    &::-webkit-scrollbar-track {
-        border: 4px solid transparent;
-        background-clip: padding-box;
-        border-radius: 8px;
-    }
+	&::-webkit-scrollbar-thumb,
+	&::-webkit-scrollbar-track {
+		border: 4px solid transparent;
+		background-clip: padding-box;
+		border-radius: 8px;
+	}
 
-    &::-webkit-scrollbar-corner {
-        background-color: transparent;
-    }
+	&::-webkit-scrollbar-corner {
+		background-color: transparent;
+	}
 }

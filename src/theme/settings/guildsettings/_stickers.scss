@@ -1,95 +1,95 @@
 #app-mount {
-    .background_a4fd01 {
-        color: var(--btn-grey);
-    }
+	.background_a4fd01 {
+		color: var(--btn-grey);
+	}
 
-    .tierInProgress_a4fd01 {
-        background-color: var(--brand-experiment);
-    }
+	.tierInProgress_a4fd01 {
+		background-color: var(--brand-experiment);
+	}
 
-    .tierBody_da77bd {
-        background: none;
-    }
+	.tierBody_da77bd {
+		background: none;
+	}
 
-    .tierHeaderLocked_da77bd,
-    .tierHeaderUnlocked_da77bd {
-        background: none;
-    }
+	.tierHeaderLocked_da77bd,
+	.tierHeaderUnlocked_da77bd {
+		background: none;
+	}
 }
 
 #stickers-tab {
-    .upsellContainer_bb33d5 {
-        display: none;
-    }
+	.upsellContainer_bb33d5 {
+		display: none;
+	}
 
-    .divider_ae36e5 {
-        display: none;
-    }
+	.divider_ae36e5 {
+		display: none;
+	}
 
-    .tiers_da77bd {
-        margin-left: 38px;
-        width: calc(100% - 96px - 20px);
-    }
+	.tiers_da77bd {
+		margin-left: 38px;
+		width: calc(100% - 96px - 20px);
+	}
 }
 
 .tierHeaderContent_da77bd {
-    padding: 16px 0 16px 0;
+	padding: 16px 0 16px 0;
 
-    &::after {
-        content: '';
-        height: 2px;
-        margin: 0 10px 0 10px;
-        background: var(--background-modifier-accent-compat);
-        display: flex;
-        flex-grow: 1;
-        order: -1;
-    }
+	&::after {
+		content: "";
+		height: 2px;
+		margin: 0 10px 0 10px;
+		background: var(--background-modifier-accent-compat);
+		display: flex;
+		flex-grow: 1;
+		order: -1;
+	}
 }
 
 .tierHeader_da77bd {
-    background: none;
+	background: none;
 }
 
 .tierTitle_da77bd {
-    width: fit-content;
-    flex-grow: 0;
-    order: -3;
-    white-space: nowrap;
-    color: var(--header-primary);
+	width: fit-content;
+	flex-grow: 0;
+	order: -3;
+	white-space: nowrap;
+	color: var(--header-primary);
 
-    h3,
-    [data-text-variant="text-xs/normal"] {
-        white-space: nowrap;
-    }
+	h3,
+	[data-text-variant="text-xs/normal"] {
+		white-space: nowrap;
+	}
 
-    [data-text-variant="text-xs/normal"] {
-        color: var(--header-secondary);
-    }
+	[data-text-variant="text-xs/normal"] {
+		color: var(--header-secondary);
+	}
 }
 
 .tierIcon_da77bd {
-    height: 24px;
-    width: 24px;
-    margin: 4px 4px 4px 0;
-    order: -4;
+	height: 24px;
+	width: 24px;
+	margin: 4px 4px 4px 0;
+	order: -4;
 }
 
 .tierIconLocked_da77bd {
-    color: var(--brand-experiment);
+	color: var(--brand-experiment);
 }
 
 .tierRequirement_da77bd {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    color: var(--text-muted);
-    margin-left: 8px;
-    order: -2;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	color: var(--text-muted);
+	margin-left: 8px;
+	order: -2;
 }
 
 .tierLock_da77bd {
-    width: 24px;
-    height: 24px;
-    margin-left: 0;
-    color: var(--info-warning-foreground);
+	width: 24px;
+	height: 24px;
+	margin-left: 0;
+	color: var(--info-warning-foreground);
 }

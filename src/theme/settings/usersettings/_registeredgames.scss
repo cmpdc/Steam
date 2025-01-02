@@ -1,283 +1,281 @@
 #game-activity-tab {
-    .children_a6ae9b {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+	.children_a6ae9b {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
 
-        >.marginTop40_f7730b {
-            flex-basis: 100%;
-        }
-    }
+		> .marginTop40_f7730b {
+			flex-basis: 100%;
+		}
+	}
 
-    .activeGame_fd966d {
-        padding: 8px 24px 10px 16px;
-        margin-right: 8px;
-        border-radius: 2px;
-        width: fit-content;
-        max-width: calc(100% - 8px - 20px - 12px);
+	.activeGame_fd966d {
+		padding: 8px 24px 10px 16px;
+		margin-right: 8px;
+		border-radius: 2px;
+		width: fit-content;
+		max-width: calc(100% - 8px - 20px - 12px);
 
-        &.notDetected_fd966d {
-            background: var(--background-accent);
-            width: fit-content;
-        }
+		&.notDetected_fd966d {
+			background: var(--background-accent);
+			width: fit-content;
+		}
 
-        &::before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 20px;
-            mask: url(https://maendisease.github.io/Steam/illustrations/icns/storage.svg);
-            background: #fff;
-            margin-right: 12px;
-        }
+		&::before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			mask: url(https://maendisease.github.io/Steam/illustrations/icns/storage.svg);
+			background: #fff;
+			margin-right: 12px;
+		}
 
-        .gameNameLastPlayed_fd966d {
-            max-width: calc(var(--settingswidthpx) - 196px - 200px);
-        }
+		.gameNameLastPlayed_fd966d {
+			max-width: calc(var(--settingswidthpx) - 196px - 200px);
+		}
 
-        .gameName_fd966d,
-        .lastPlayed_fd966d {
-            font-size: 14px;
-            font-weight: 600;
-            color: #fff;
-            line-height: 20px;
-        }
+		.gameName_fd966d,
+		.lastPlayed_fd966d {
+			font-size: 14px;
+			font-weight: 600;
+			color: #fff;
+			line-height: 20px;
+		}
 
-        .lastPlayed_fd966d {
-            height: 20px;
-            overflow: hidden;
-        }
+		.lastPlayed_fd966d {
+			height: 20px;
+			overflow: hidden;
+		}
 
-        .default_c0d6c6 {
-            transform: translateY(-107%);
-        }
+		.default_c0d6c6 {
+			transform: translateY(-107%);
+		}
 
-        .lastPlayed_fd966d,
-        .hoverRoll_c0d6c6,
-        .hovered_c0d6c6,
-        .default_c0d6c6 {
-            width: fit-content;
-        }
+		.lastPlayed_fd966d,
+		.hoverRoll_c0d6c6,
+		.hovered_c0d6c6,
+		.default_c0d6c6 {
+			width: fit-content;
+		}
 
-        .hovered_c0d6c6 {
-            position: relative;
-            max-width: calc(var(--settingswidthpx) - 196px - 200px);
-        }
-    }
+		.hovered_c0d6c6 {
+			position: relative;
+			max-width: calc(var(--settingswidthpx) - 196px - 200px);
+		}
+	}
 
-    .nowPlayingAdd_fd966d {
-        margin: 0;
-        font-size: 0;
+	.nowPlayingAdd_fd966d {
+		margin: 0;
+		font-size: 0;
 
-        button {
-            padding: 0;
+		button {
+			padding: 0;
 
-            .contents_dd4f85 {
-                display: none;
-            }
+			.contents_dd4f85 {
+				display: none;
+			}
 
-            &::before {
-                content: '';
-                display: block;
-                width: 20px;
-                height: 20px;
-                mask: url(https://maendisease.github.io/Steam/illustrations/icns/circleplus.svg);
-                background: var(--background-accent-hover);
-                margin: 4px;
-            }
+			&::before {
+				content: "";
+				display: block;
+				width: 20px;
+				height: 20px;
+				mask: url(https://maendisease.github.io/Steam/illustrations/icns/circleplus.svg);
+				background: var(--background-accent-hover);
+				margin: 4px;
+			}
 
-            &:hover::before {
-                background: #fff;
-            }
-        }
-    }
+			&:hover::before {
+				background: #fff;
+			}
+		}
+	}
 
-    :root {
-        counter-reset: gamesCount;
-    }
+	:root {
+		counter-reset: gamesCount;
+	}
 
-    .marginTop40_f7730b {
-        display: flex;
-        flex-flow: row wrap;
-        margin-top: 24px;
+	.marginTop40_f7730b {
+		display: flex;
+		flex-flow: row wrap;
+		margin-top: 24px;
 
-        h3 {
-            order: -2;
-            text-transform: capitalize;
-            color: #fff;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 600;
-            letter-spacing: 0;
-            padding-top: 8px;
-            padding-left: 8px;
-        }
+		h3 {
+			order: -2;
+			text-transform: capitalize;
+			color: #fff;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+			letter-spacing: 0;
+			padding-top: 8px;
+			padding-left: 8px;
+		}
 
-        &:before {
-            content: '';
-            height: 2px;
-            margin: 16px 10px 0 10px;
-            background: var(--background-modifier-accent-compat);
-            display: flex;
-            flex-grow: 1;
-        }
+		&:before {
+			content: "";
+			height: 2px;
+			margin: 16px 10px 0 10px;
+			background: var(--background-modifier-accent-compat);
+			display: flex;
+			flex-grow: 1;
+		}
 
-        &:after {
-            content: counter(gamesCount);
-            animation: game-activity-tabCounter 1s linear infinite forwards;
+		&:after {
+			content: counter(gamesCount);
+			animation: game-activity-tabCounter 1s linear infinite forwards;
 
-            // Styles
-            color: var(--text-muted);
-            font-size: 16px;
-            line-height: 20px;
-            margin-left: 8px;
-            font-weight: 600;
-            order: -1;
-            padding-top: 8px;
-        }
+			// Styles
+			color: var(--text-muted);
+			font-size: 16px;
+			line-height: 20px;
+			margin-left: 8px;
+			font-weight: 600;
+			order: -1;
+			padding-top: 8px;
+		}
 
-        .game_fd966d {
-            counter-increment: gamesCount;
+		.game_fd966d {
+			counter-increment: gamesCount;
 
-            // Styles
-            flex-basis: 100%;
-            padding: 6px 8px;
-            height: 58px;
-            box-shadow: none;
+			// Styles
+			flex-basis: 100%;
+			padding: 6px 8px;
+			height: 58px;
+			box-shadow: none;
 
-            &.card_ffe375:before {
-                display: none;
-            }
+			&.card_ffe375:before {
+				display: none;
+			}
 
-            &:hover {
-                background: var(--background-accent);
-                transition: background .2s linear;
+			&:hover {
+				background: var(--background-accent);
+				transition: background 0.2s linear;
 
-                .gameNameLastPlayed_fd966d::after,
-                .removeGame_fd966d {
-                    background-color: var(--background-accent-hover);
-                    transition: background .2s linear;
-                }
+				.gameNameLastPlayed_fd966d::after,
+				.removeGame_fd966d {
+					background-color: var(--background-accent-hover);
+					transition: background 0.2s linear;
+				}
 
-                &:has(.removeGame_fd966d:hover) {
-                    .gameNameLastPlayed_fd966d::after {
-                        transition: background .2s linear;
-                        background-color: var(--status-danger);
-                    }
-                }
-            }
+				&:has(.removeGame_fd966d:hover) {
+					.gameNameLastPlayed_fd966d::after {
+						transition: background 0.2s linear;
+						background-color: var(--status-danger);
+					}
+				}
+			}
 
-            .gameVerifiedIcon_fd966d {
-                height: 14px !important;
-                width: 14px !important;
-                margin-left: 4px;
-            }
+			.gameVerifiedIcon_fd966d {
+				height: 14px !important;
+				width: 14px !important;
+				margin-left: 4px;
+			}
 
-            .gameNameLastPlayed_fd966d {
+			.gameNameLastPlayed_fd966d {
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 98px;
+					height: 45px;
+					mask: url(https://maendisease.github.io/Steam/illustrations/icns/storage.svg);
+					background-color: #fff;
+					mask-repeat: no-repeat;
+					mask-position: center;
+					mask-size: 18px;
+					margin-right: 12px;
+					z-index: 1;
+					top: 0;
+					bottom: 0;
+					margin-top: auto;
+					margin-bottom: auto;
+				}
 
-                &::before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 98px;
-                    height: 45px;
-                    mask: url(https://maendisease.github.io/Steam/illustrations/icns/storage.svg);
-                    background-color: #fff;
-                    mask-repeat: no-repeat;
-                    mask-position: center;
-                    mask-size: 18px;
-                    margin-right: 12px;
-                    z-index: 1;
-                    top: 0;
-                    bottom: 0;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                }
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					height: 45px;
+					width: 98px;
+					background: var(--background-accent);
+					top: 0;
+					bottom: 0;
+					margin-top: auto;
+					margin-bottom: auto;
+				}
 
-                &::after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    height: 45px;
-                    width: 98px;
-                    background: var(--background-accent);
-                    top: 0;
-                    bottom: 0;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                }
+				> div {
+					margin-left: calc(98px + 16px);
+				}
 
-                >div {
-                    margin-left: calc(98px + 16px);
-                }
+				.gameNameInput_fd966d {
+					margin-left: calc(98px + 16px - 4px);
+					border: none;
+					border-radius: 2px;
 
-                .gameNameInput_fd966d {
-                    margin-left: calc(98px + 16px - 4px);
-                    border: none;
-                    border-radius: 2px;
+					&:hover {
+						background: var(--background-accent-hover);
+					}
 
-                    &:hover {
-                        background: var(--background-accent-hover);
-                    }
-                
-                    &:focus,
-                    &:focus-within {
-                        background: var(--background-modifier-accent-dark);
-                        box-shadow: inset 1px 1px 4px #000a;
-                    }
-                }
+					&:focus,
+					&:focus-within {
+						background: var(--background-modifier-accent-dark);
+						box-shadow: inset 1px 1px 4px #000a;
+					}
+				}
 
-                .gameName_fd966d {
-                    color: #fff;
-                    font-weight: 400;
-                    line-height: 20px;
-                }
+				.gameName_fd966d {
+					color: #fff;
+					font-weight: 400;
+					line-height: 20px;
+				}
 
-                .lastPlayed_fd966d {
-                    color: var(--text-muted);
-                    font-size: 12px;
-                    line-height: 22px;
-                    letter-spacing: .5px;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    display: flex;
-                    align-items: center;
+				.lastPlayed_fd966d {
+					color: var(--text-muted);
+					font-size: 12px;
+					line-height: 22px;
+					letter-spacing: 0.5px;
+					text-transform: uppercase;
+					font-weight: 700;
+					display: flex;
+					align-items: center;
 
-                    strong {
-                        color: var(--background-accent-hover);
-                        font-weight: 700;
-                    }
+					strong {
+						color: var(--background-accent-hover);
+						font-weight: 700;
+					}
 
-                    &::before {
-                        content: '';
-                        display: block;
-                        width: 16px;
-                        height: 16px;
-                        mask: url(https://maendisease.github.io/Steam/illustrations/icns/clock.svg);
-                        background: var(--text-muted);
-                        margin-right: 4px;
-                    }
-                }
-            }
+					&::before {
+						content: "";
+						display: block;
+						width: 16px;
+						height: 16px;
+						mask: url(https://maendisease.github.io/Steam/illustrations/icns/clock.svg);
+						background: var(--text-muted);
+						margin-right: 4px;
+					}
+				}
+			}
+		}
 
-        }
+		@keyframes game-activity-tabCounter {
+			to {
+				content: counter(gamesCount);
+			}
+		}
+	}
 
-        @keyframes game-activity-tabCounter {
-            to {
-                content: counter(gamesCount);
-            }
-        }
-    }
-
-    .removeGame_fd966d {
-        opacity: 1;
-        position: relative;
-        top: unset;
-        right: unset;
-        box-shadow: none;
-        background-color: var(--background-accent);
-        border-radius: 2px;
-        margin: 8px;
-        flex-shrink: 0;
-    }
+	.removeGame_fd966d {
+		opacity: 1;
+		position: relative;
+		top: unset;
+		right: unset;
+		box-shadow: none;
+		background-color: var(--background-accent);
+		border-radius: 2px;
+		margin: 8px;
+		flex-shrink: 0;
+	}
 }

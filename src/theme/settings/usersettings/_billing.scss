@@ -1,231 +1,231 @@
 #billing-tab {
-    h2.title_c46f6a+.footer_edf4d6 {
-        margin-top: 0;
-    }
+	h2.title_c46f6a + .footer_edf4d6 {
+		margin-top: 0;
+	}
 
-    .subText_edf4d6 {
-        margin-top: 10px;
-    }
+	.subText_edf4d6 {
+		margin-top: 10px;
+	}
 
-    .paymentHistory_cb70f4 {
-        margin-top: 24px;
+	.paymentHistory_cb70f4 {
+		margin-top: 24px;
 
-        h2.title_c46f6a {
-            margin-bottom: 0;
-            text-transform: capitalize;
-            color: #fff;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 600;
-            letter-spacing: 0;
-            padding-top: 8px;
-            padding-left: 8px;
-            display: flex;
-            align-items: center;
+		h2.title_c46f6a {
+			margin-bottom: 0;
+			text-transform: capitalize;
+			color: #fff;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+			letter-spacing: 0;
+			padding-top: 8px;
+			padding-left: 8px;
+			display: flex;
+			align-items: center;
 
-            &::after {
-                content: '';
-                height: 2px;
-                margin: 0 10px 0 10px;
-                background: var(--background-modifier-accent-compat);
-                display: flex;
-                flex-grow: 1;
-            }
-        }
+			&::after {
+				content: "";
+				height: 2px;
+				margin: 0 10px 0 10px;
+				background: var(--background-modifier-accent-compat);
+				display: flex;
+				flex-grow: 1;
+			}
+		}
 
-        .paymentRowHeader_f66684 {
-            display: none;
-        }
+		.paymentRowHeader_f66684 {
+			display: none;
+		}
 
-        .paymentPane_f66684 {
-            background: none;
-            border-radius: 0;
-        }
+		.paymentPane_f66684 {
+			background: none;
+			border-radius: 0;
+		}
 
-        .paymentRow_f66684 {
-            border: none;
-        }
+		.paymentRow_f66684 {
+			border: none;
+		}
 
-        .paginator_f66684 {
-            background: none;
-        }
+		.paginator_f66684 {
+			background: none;
+		}
 
-        .scrollerBase_eed6a8 {
-            overflow: auto !important;
-            border: none;
-        }
+		.scrollerBase_eed6a8 {
+			overflow: auto !important;
+			border: none;
+		}
 
-        .payment_a28a08 {
-            background: none;
-            border: none;
-            padding: 6px 8px;
-            min-height: 58px;
+		.payment_a28a08 {
+			background: none;
+			border: none;
+			padding: 6px 8px;
+			min-height: 58px;
 
-            &.hoverablePayment_a28a08:hover,
-            &:has(.expandedInfo_a28a08) {
-                background: var(--background-accent);
-                transition: background .2s linear;
-            }
+			&.hoverablePayment_a28a08:hover,
+			&:has(.expandedInfo_a28a08) {
+				background: var(--background-accent);
+				transition: background 0.2s linear;
+			}
 
-            .summaryInfo_a28a08 {
-                padding: 0;
-            }
+			.summaryInfo_a28a08 {
+				padding: 0;
+			}
 
-            .date_a28a08 {
-                position: absolute;
-                left: 122px;
-                margin-top: 20px;
-                display: flex;
-                color: var(--text-muted);
-                font-size: 12px;
-                line-height: 22px;
-                letter-spacing: .5px;
-                text-transform: uppercase;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
+			.date_a28a08 {
+				position: absolute;
+				left: 122px;
+				margin-top: 20px;
+				display: flex;
+				color: var(--text-muted);
+				font-size: 12px;
+				line-height: 22px;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				font-weight: 700;
+				display: flex;
+				align-items: center;
 
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 16px;
-                    height: 16px;
-                    mask: url(https://maendisease.github.io/Steam/illustrations/icns/clock.svg);
-                    background: var(--text-muted);
-                    margin-right: 4px;
-                }
-            }
-        }
+				&::before {
+					content: "";
+					display: block;
+					width: 16px;
+					height: 16px;
+					mask: url(https://maendisease.github.io/Steam/illustrations/icns/clock.svg);
+					background: var(--text-muted);
+					margin-right: 4px;
+				}
+			}
+		}
 
-        .gameIcon_f394e5 {
-            border-radius: 0;
-            margin-right: 16px;
-        }
+		.gameIcon_f394e5 {
+			border-radius: 0;
+			margin-right: 16px;
+		}
 
-        .xsmall_f394e5 {
-            height: 45px;
-            width: 98px;
-        }
+		.xsmall_f394e5 {
+			height: 45px;
+			width: 98px;
+		}
 
-        .description_a28a08 {
-            color: #fff;
-            font-weight: 400;
-            line-height: 20px;
+		.description_a28a08 {
+			color: #fff;
+			font-weight: 400;
+			line-height: 20px;
 
-            >div:not(.gameIcon_f394e5),
-            >svg {
-                margin-top: -19px;
-            }
-        }
+			> div:not(.gameIcon_f394e5),
+			> svg {
+				margin-top: -19px;
+			}
+		}
 
-        .giftIcon_a28a08 {
-            height: 14px;
-            width: 14px;
-            color: var(--gpColor-Yellow);
-            opacity: 1;
-            margin-left: 4px;
-        }
+		.giftIcon_a28a08 {
+			height: 14px;
+			width: 14px;
+			color: var(--gpColor-Yellow);
+			opacity: 1;
+			margin-left: 4px;
+		}
 
-        svg.expand_a28a08 {
-            margin: 8px;
-            color: var(--brand-experiment);
-        }
-    }
+		svg.expand_a28a08 {
+			margin: 8px;
+			color: var(--brand-experiment);
+		}
+	}
 
-    .codeRedemptionRedirect_cb70f4 {
-        padding: 0;
-        background: none;
-        border: none;
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
-        color: var(--text-muted);
-        letter-spacing: 0;
-    }
+	.codeRedemptionRedirect_cb70f4 {
+		padding: 0;
+		background: none;
+		border: none;
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: var(--text-muted);
+		letter-spacing: 0;
+	}
 
-    .expandedInfo_a28a08 {
-        background: var(--background-tertiary);
-        padding: 24px;
-        margin: 6px 0 0 0;
-        padding-top: 24px;
-        border-radius: 0;
-    }
+	.expandedInfo_a28a08 {
+		background: var(--background-tertiary);
+		padding: 24px;
+		margin: 6px 0 0 0;
+		padding-top: 24px;
+		border-radius: 0;
+	}
 
-    .paymentText_a28a08 {
-        color: #fff;
-    }
+	.paymentText_a28a08 {
+		color: #fff;
+	}
 
-    .paymentDetail_a28a08 {
-        margin: 0;
-        padding: 10px 0;
-        border-bottom: thin solid var(--background-modifier-accent-dark);
+	.paymentDetail_a28a08 {
+		margin: 0;
+		padding: 10px 0;
+		border-bottom: thin solid var(--background-modifier-accent-dark);
 
-        &:first-child {
-            margin-top: 10px;
-            border-top: thin solid var(--background-modifier-accent-dark);
-        }
+		&:first-child {
+			margin-top: 10px;
+			border-top: thin solid var(--background-modifier-accent-dark);
+		}
 
-        >div {
-            gap: 10px;
-            justify-content: left;
+		> div {
+			gap: 10px;
+			justify-content: left;
 
-            div:first-child {
-                font-size: 14px;
-                line-height: 18px;
-                color: var(--contextmenu-text);
-            }
+			div:first-child {
+				font-size: 14px;
+				line-height: 18px;
+				color: var(--contextmenu-text);
+			}
 
-            div:last-child {
-                font-size: 12px;
-                line-height: 19px;
-                font-weight: 400;
-                color: var(--text-muted);
-            }
-        }
-    }
+			div:last-child {
+				font-size: 12px;
+				line-height: 19px;
+				font-weight: 400;
+				color: var(--text-muted);
+			}
+		}
+	}
 
-    .paymentHeader_a28a08 {
-        border: none;
-        padding: 0;
-        margin: 0;
-        color: var(--text-muted);
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        line-height: 36px;
-        margin-bottom: 0;
-        text-transform: uppercase;
-    }
+	.paymentHeader_a28a08 {
+		border: none;
+		padding: 0;
+		margin: 0;
+		color: var(--text-muted);
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		line-height: 36px;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
 
-    .paymentText_a28a08>div:not([class]) {
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
-        color: var(--text-muted);
-        letter-spacing: 0;
-        margin-bottom: 10px;
-    }
+	.paymentText_a28a08 > div:not([class]) {
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: var(--text-muted);
+		letter-spacing: 0;
+		margin-bottom: 10px;
+	}
 
-    .refundSubHeader_a28a08 {
-        color: var(--text-muted);
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        line-height: 36px;
-        margin: 0;
-        text-transform: uppercase;
-    }
+	.refundSubHeader_a28a08 {
+		color: var(--text-muted);
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		line-height: 36px;
+		margin: 0;
+		text-transform: uppercase;
+	}
 
-    .refundIconContainer_a28a08 {
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
-        color: var(--text-muted);
-        letter-spacing: 0;
-    }
+	.refundIconContainer_a28a08 {
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: var(--text-muted);
+		letter-spacing: 0;
+	}
 
-    .refundActions_a28a08 {
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
-        letter-spacing: 0;
-    }
+	.refundActions_a28a08 {
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		letter-spacing: 0;
+	}
 }

@@ -1,51 +1,51 @@
 .header_fd6364 {
-    position: fixed;
-    top: 0;
-    left: 76px;
-    -webkit-app-region: drag;
-    padding: 6px 4px 6px 10px;
-    box-shadow: none;
-    width: 189px;
+	position: fixed;
+	top: 0;
+	left: 76px;
+	-webkit-app-region: drag;
+	padding: 6px 4px 6px 10px;
+	box-shadow: none;
+	width: 189px;
 
-    .platform-linux &,
-    .platform-web & {
-        left: 9px;
-    }
+	.platform-linux &,
+	.platform-web & {
+		left: 9px;
+	}
 
-    .headerContent_fd6364 {
-        -webkit-app-region: no-drag;
-        width: fit-content;
-    }
+	.headerContent_fd6364 {
+		-webkit-app-region: no-drag;
+		width: fit-content;
+	}
 
-    .name_fd6364 {
-        font-family: var(--font-display);
-        font-size: 12px;
-        line-height: 20px;
-        font-weight: 500;
-        cursor: pointer;
-    }
+	.name_fd6364 {
+		font-family: var(--font-display);
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: 500;
+		cursor: pointer;
+	}
 
-    .dropdownButton_ee69e0 {
-        display: none;
-    }
+	.dropdownButton_ee69e0 {
+		display: none;
+	}
 }
 
 .clickable_fd6364 .header_fd6364:hover,
 .selected_fd6364 .header_fd6364 {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 #app-mount .clickable_fd6364 .header_fd6364:hover .headerContent_fd6364,
 #app-mount .selected_fd6364 .header_fd6364 .headerContent_fd6364 {
-    color: var(--interactive-active);
+	color: var(--interactive-active);
 }
 
 #app-mount .headerContent_fd6364 {
-    color: var(--interactive-normal);
-    transition: color .15s ease;
-    filter: none;
+	color: var(--interactive-normal);
+	transition: color 0.15s ease;
+	filter: none;
 }
 
 .guildIconV2Container_ed9816 {
-    margin-right: 4px;
+	margin-right: 4px;
 }

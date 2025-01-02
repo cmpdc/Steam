@@ -1,25 +1,25 @@
 .VPP-Button {
-    background: rgb(0 0 0/.3);
-    border-radius: 2px;
+	background: rgb(0 0 0/0.3);
+	border-radius: 2px;
 
-    &:hover {
-        background: rgb(0 0 0 / .6);
-    }
+	&:hover {
+		background: rgb(0 0 0 / 0.6);
+	}
 }
 
 .VPP-carousel.carouselModal-1eUFoq:not(#idontthinkso) {
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    background: var(--modal-background);
+	height: fit-content;
+	width: fit-content;
+	position: relative;
+	background: var(--modal-background);
 }
 
 .VPP-carousel .arrowContainer_b65c0b {
-    opacity: 1;
-    background: var(--btn-grey);
-    border-radius: 2px;
+	opacity: 1;
+	background: var(--btn-grey);
+	border-radius: 2px;
 
-    &:hover {
-        background: var(--btn-grey-hover);
-    }
+	&:hover {
+		background: var(--btn-grey-hover);
+	}
 }

@@ -1,65 +1,65 @@
 .override_cacc4c {
-    border-radius: 0;
-    border: none;
-    margin-bottom: 0;
-    background: none;
-    transition: none;
-    padding: 6px 0 6px 8px;
-    height: 46px;
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	background: none;
+	transition: none;
+	padding: 6px 0 6px 8px;
+	height: 46px;
 
-    &:hover {
-        background: var(--background-accent);
-        transition: background .2s linear;
+	&:hover {
+		background: var(--background-accent);
+		transition: background 0.2s linear;
 
-        .checkbox_f6cde8 {
-            background-color: var(--background-accent-hover);
-            transition: background .2s linear;
-        }
-    }
+		.checkbox_f6cde8 {
+			background-color: var(--background-accent-hover);
+			transition: background 0.2s linear;
+		}
+	}
 
-    .icon_cacc4c {
-        width: 16px;
-    }
+	.icon_cacc4c {
+		width: 16px;
+	}
 
-    .channelNameContainer_cacc4c {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+	.channelNameContainer_cacc4c {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
 
-    .channelName_cacc4c {
-        color: #fff;
-        font-weight: 400;
-        line-height: 20px;
-    }
+	.channelName_cacc4c {
+		color: #fff;
+		font-weight: 400;
+		line-height: 20px;
+	}
 
-    .channelNameByline_cacc4c {
-        color: var(--text-muted);
-        font-size: 12px;
-        line-height: 22px;
-        letter-spacing: .5px;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
+	.channelNameByline_cacc4c {
+		color: var(--text-muted);
+		font-size: 12px;
+		line-height: 22px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
 
-    .checkboxMute_cacc4c {
-        &::before {
-            display: none;
-        }
-    }
+	.checkboxMute_cacc4c {
+		&::before {
+			display: none;
+		}
+	}
 }
 
 #app-mount .override_cacc4c {
-    &:hover {
-        background: var(--background-accent);
-        transition: background .2s linear;
-    }
+	&:hover {
+		background: var(--background-accent);
+		transition: background 0.2s linear;
+	}
 
-    .checkboxContainer_cacc4c:before {
-        background-color: var(--background-modifier-accent-dark);
-    }
+	.checkboxContainer_cacc4c:before {
+		background-color: var(--background-modifier-accent-dark);
+	}
 }
 
 .button_a467ac {
-    border-radius: 2px;
+	border-radius: 2px;
 }

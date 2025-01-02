@@ -1,247 +1,247 @@
 @use "../modals/generic";
 
 .bd-modal-root {
-    background: var(--modal-background);
-    border-radius: 0;
-    @include generic.modalTopBar;
+	background: var(--modal-background);
+	border-radius: 0;
+	@include generic.modalTopBar;
 
-    --text-link: var(--text-linkHi);
+	--text-link: var(--text-linkHi);
 
-    a:hover {
-        text-decoration: none;
-        --text-link: var(--text-linkHi-hover);
-    }
+	a:hover {
+		text-decoration: none;
+		--text-link: var(--text-linkHi-hover);
+	}
 }
 
 .bd-button.bd-close-button {
-    position: absolute;
-    top: 9px;
-    right: 9px;
-    height: 16px;
-    width: 16px;
-    padding: 0;
-    box-shadow: none;
+	position: absolute;
+	top: 9px;
+	right: 9px;
+	height: 16px;
+	width: 16px;
+	padding: 0;
+	box-shadow: none;
 
-    svg {
-        height: 16px !important;
-        width: 16px !important;
-    }
+	svg {
+		height: 16px !important;
+		width: 16px !important;
+	}
 }
 
 .bd-modal-medium {
-    width: 500px;
+	width: 500px;
 }
 
 .bd-modal-header {
-    h1 {
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 24px;
-        text-transform: unset !important;
-        margin-bottom: 0 !important;
-        color: var(--header-primary);
-    }
+	h1 {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 24px;
+		text-transform: unset !important;
+		margin-bottom: 0 !important;
+		color: var(--header-primary);
+	}
 }
 
 .bd-modal-header,
 .bd-modal-footer {
-    padding: 32px;
+	padding: 32px;
 }
 
 .bd-modal-content {
-    border-radius: 0;
-    padding-left: 32px;
-    padding-bottom: 0;
-    padding-right: 32px;
-    overflow: hidden overlay;
+	border-radius: 0;
+	padding-left: 32px;
+	padding-bottom: 0;
+	padding-right: 32px;
+	overflow: hidden overlay;
 }
 
 .bd-modal-footer {
-    border-radius: 0;
-    background: none;
-    box-shadow: none;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
 }
 
 .bd-text-input {
-    padding: 10px;
-    height: 42px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    border-radius: 2px;
-    background: var(--btn-grey);
-    border: none;
-    transition: none;
+	padding: 10px;
+	height: 42px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	border-radius: 2px;
+	background: var(--btn-grey);
+	border: none;
+	transition: none;
 
-    &:hover {
-        background: var(--btn-grey-hover-light);
-    }
+	&:hover {
+		background: var(--btn-grey-hover-light);
+	}
 
-    &:focus,
-    &:focus-within {
-        background: var(--background-modifier-accent-dark);
-        box-shadow: inset 1px 1px 4px #000a;
-    }
+	&:focus,
+	&:focus-within {
+		background: var(--background-modifier-accent-dark);
+		box-shadow: inset 1px 1px 4px #000a;
+	}
 }
 
 .bd-slider-wrap {
-    color: #fff;
+	color: #fff;
 }
 
 .bd-slider-label {
-    border-radius: 3px;
+	border-radius: 3px;
 }
 
 .bd-slider-input {
-    height: 6px;
-    border-radius: 3px;
+	height: 6px;
+	border-radius: 3px;
 }
 
 .bd-error-modal {
-    .header_f9a4c9 {
-        .title_c46f6a {
-            text-transform: capitalize;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-            letter-spacing: 0;
-            margin-bottom: 0;
-        }
-    }
+	.header_f9a4c9 {
+		.title_c46f6a {
+			text-transform: capitalize;
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+			letter-spacing: 0;
+			margin-bottom: 0;
+		}
+	}
 
-    .bd-tab-item {
-        min-width: 40px;
-        height: 34px;
-        min-height: 34px;
-        padding: 0 14px;
-        margin-right: 16px;
-        font-size: 14px;
-        line-height: 16px;
-        font-weight: 400;
-        border-radius: 2px;
-        color: var(--text-lighter);
-        background: var(--btn-grey);
-        transition-property: background, box-shadow, color;
-        transition-duration: .2s;
-        transition-timing-function: ease-out;
+	.bd-tab-item {
+		min-width: 40px;
+		height: 34px;
+		min-height: 34px;
+		padding: 0 14px;
+		margin-right: 16px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 400;
+		border-radius: 2px;
+		color: var(--text-lighter);
+		background: var(--btn-grey);
+		transition-property: background, box-shadow, color;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
 
-        &:hover {
-            background: var(--btn-grey-hover);
-            color: #fff;
-            box-shadow: var(--btn-grey-boxshadow);
-        }
-    }
+		&:hover {
+			background: var(--btn-grey-hover);
+			color: #fff;
+			box-shadow: var(--btn-grey-boxshadow);
+		}
+	}
 
-    .bd-addon-errors {
-        margin-top: 0;
-    }
+	.bd-addon-errors {
+		margin-top: 0;
+	}
 
-    .bd-addon-error {
-        border-radius: 0;
-        margin-bottom: 0;
-        background: none;
-        border: none;
+	.bd-addon-error {
+		border-radius: 0;
+		margin-bottom: 0;
+		background: none;
+		border: none;
 
-        &:hover,
-        &.expanded {
-            background: var(--background-accent);
-            transition: background .2s linear;
+		&:hover,
+		&.expanded {
+			background: var(--background-accent);
+			transition: background 0.2s linear;
 
-            .bd-addon-error-expander {
-                background-color: var(--background-accent-hover);
-                transition: background .2s linear;
-            }
-        }
-    }
+			.bd-addon-error-expander {
+				background-color: var(--background-accent-hover);
+				transition: background 0.2s linear;
+			}
+		}
+	}
 
-    .bd-addon-error-header {
-        padding: 6px 8px;
-        height: 58px;
-    }
+	.bd-addon-error-header {
+		padding: 6px 8px;
+		height: 58px;
+	}
 
-    .bd-addon-error-icon {
-        background: var(--status-danger);
-        width: 45px;
-        height: 45px;
-        border-radius: 0;
-        margin-right: 12px;
-        align-self: center;
+	.bd-addon-error-icon {
+		background: var(--status-danger);
+		width: 45px;
+		height: 45px;
+		border-radius: 0;
+		margin-right: 12px;
+		align-self: center;
 
-        svg {
-            fill: #fff;
-            width: 18px !important;
-            height: 18px !important;
-        }
-    }
+		svg {
+			fill: #fff;
+			width: 18px !important;
+			height: 18px !important;
+		}
+	}
 
-    .bd-addon-error-header-inner h3 {
-        color: var(--status-danger);
-        line-height: 20px;
-        font-size: 16px;
-        font-weight: 400;
-    }
+	.bd-addon-error-header-inner h3 {
+		color: var(--status-danger);
+		line-height: 20px;
+		font-size: 16px;
+		font-weight: 400;
+	}
 
-    .detailsIcon_d5408a {
-        color: var(--text-muted);
-    }
+	.detailsIcon_d5408a {
+		color: var(--text-muted);
+	}
 
-    .bd-addon-error-details {
-        color: var(--text-muted);
-        line-height: 22px;
-        letter-spacing: .5px;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 12px;
-    }
+	.bd-addon-error-details {
+		color: var(--text-muted);
+		line-height: 22px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 12px;
+	}
 
-    .bd-addon-error-expander {
-        height: 24px;
-        width: 24px;
-        padding: 6px;
-        border-radius: 2px;
-        color: var(--brand-experiment);
-        background: var(--btn-grey);
-        transition-property: background, box-shadow;
-        transition-duration: .2s;
-        transition-timing-function: ease-out;
+	.bd-addon-error-expander {
+		height: 24px;
+		width: 24px;
+		padding: 6px;
+		border-radius: 2px;
+		color: var(--brand-experiment);
+		background: var(--btn-grey);
+		transition-property: background, box-shadow;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
 
-        &:hover {
-            background: var(--btn-grey-hover);
-            box-shadow: var(--btn-grey-boxshadow);
-        }
-    }
+		&:hover {
+			background: var(--btn-grey-hover);
+			box-shadow: var(--btn-grey-boxshadow);
+		}
+	}
 
-    .bd-addon-error-body {
-        .bd-divider {
-            display: none;
-        }
-    }
+	.bd-addon-error-body {
+		.bd-divider {
+			display: none;
+		}
+	}
 
-    .bd-addon-error-body {
-        padding: 0 8px 8px 8px;
-    }
+	.bd-addon-error-body {
+		padding: 0 8px 8px 8px;
+	}
 }
 
 .bd-addon-error-stack code {
-    font-size: 13px;
-    line-height: 17px;
-    background: var(--code-background);
-    border: none;
-    border-radius: 0;
-    -webkit-font-smoothing: antialiased;
+	font-size: 13px;
+	line-height: 17px;
+	background: var(--code-background);
+	border: none;
+	border-radius: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
 .markdown_d7f12d {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .bd-addon-modal {
-    .bd-addon-modal-header {
-        .size20_fb468f {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-            color: var(--header-primary);
-        }
-    }
+	.bd-addon-modal-header {
+		.size20_fb468f {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+			color: var(--header-primary);
+		}
+	}
 }

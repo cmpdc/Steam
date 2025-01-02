@@ -1,44 +1,43 @@
 .accountProfilePopoutWrapper_b2ca13 {
-    .overlayBackground_c69a7b {
+	.overlayBackground_c69a7b {
+		.divider_ad5fac {
+			display: none;
+		}
 
-        .divider_ad5fac {
-            display: none;
-        }
+		.scroller_d2b491 {
+			max-height: 200px;
+			padding-bottom: 16px;
+		}
 
-        .scroller_d2b491 {
-            max-height: 200px;
-            padding-bottom: 16px;
-        }
+		> .menu_d90b3d {
+			box-shadow: none;
+			background: rgb(0 0 0/0.3);
+			padding: 8px;
+			border-radius: 5px;
+			width: calc(100% - 24px - 16px);
+			max-width: unset;
+			min-width: unset;
+			margin-left: 12px;
+			margin-bottom: 12px;
+			box-sizing: content-box;
+		}
 
-        >.menu_d90b3d {
-            box-shadow: none;
-            background: rgb(0 0 0/.3);
-                padding: 8px;
-                border-radius: 5px;
-                width: calc(100% - 24px - 16px);
-                max-width: unset;
-                min-width: unset;
-                margin-left: 12px;
-                margin-bottom: 12px;
-                box-sizing:content-box;
-        }
+		.section_d7a21f:has(.memberSinceContainer__16630) {
+			padding-bottom: 12px;
+		}
+	}
 
-        .section_d7a21f:has(.memberSinceContainer__16630) {
-            padding-bottom: 12px;
-        }
-    }
+	[aria-activedescendant*="account-status-picker"] {
+		max-width: 200px;
+	}
 
-    [aria-activedescendant*="account-status-picker"] {
-        max-width: 200px;
-    }
+	.statusItem_ad5fac {
+		padding: 0;
+		min-height: unset;
 
-    .statusItem_ad5fac {
-        padding: 0;
-        min-height: unset;
-
-        .description_ad5fac {
-            margin-bottom: 0;
-            color: var(--text-muted);
-        }
-    }
+		.description_ad5fac {
+			margin-bottom: 0;
+			color: var(--text-muted);
+		}
+	}
 }

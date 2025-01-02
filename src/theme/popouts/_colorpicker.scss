@@ -1,71 +1,71 @@
 #app-mount {
-    .customColorPicker_bbc020 {
-        background: var(--contextmenu-background);
-    }
+	.customColorPicker_bbc020 {
+		background: var(--contextmenu-background);
+	}
 }
 
 .customColorPicker_bbc020 {
-    padding: 16px;
-    gap: 10px;
-    border: none;
-    border-radius: 0;
-    box-shadow: var(--contextmenu-shadow);
+	padding: 16px;
+	gap: 10px;
+	border: none;
+	border-radius: 0;
+	box-shadow: var(--contextmenu-shadow);
 
-    .customColorPickerEyeDropper_cb284c {
-        height: 34px;
-        width: 34px;
-        border-radius: 2px;
-        background: rgb(0 0 0/.2);
-        transition-property: background, box-shadow;
-        transition-duration: .2s;
-        transition-timing-function: ease-out;
+	.customColorPickerEyeDropper_cb284c {
+		height: 34px;
+		width: 34px;
+		border-radius: 2px;
+		background: rgb(0 0 0/0.2);
+		transition-property: background, box-shadow;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
 
-        &:hover {
-            background: rgb(0 0 0/.3);
-            box-shadow: var(--btn-grey-boxshadow);
+		&:hover {
+			background: rgb(0 0 0/0.3);
+			box-shadow: var(--btn-grey-boxshadow);
 
-            svg {
-                color: var(--brand-experiment);
-            }
-        }
+			svg {
+				color: var(--brand-experiment);
+			}
+		}
 
-        svg {
-            color: var(--brand-experiment);
-            height: 18px;
-            width: 18px;
-        }
-    }
+		svg {
+			color: var(--brand-experiment);
+			height: 18px;
+			width: 18px;
+		}
+	}
 
-    .input_f8bc55 {
-        background: rgb(0 0 0/.2);
-        border: 1px solid #000;
-        box-shadow: 1px 1px 0 0 var(--store-search-border);
+	.input_f8bc55 {
+		background: rgb(0 0 0/0.2);
+		border: 1px solid #000;
+		box-shadow: 1px 1px 0 0 var(--store-search-border);
 
-        &:hover:not(:focus, :focus-within) {
-            background: rgb(0 0 0/.3);
-        }
-    }
+		&:hover:not(:focus, :focus-within) {
+			background: rgb(0 0 0/0.3);
+		}
+	}
 
-    .suggestedColor__713b5 {
-        width: 34px;
-        height: 34px;
-        border-radius: 2px;
-        border: none;
-        transition-property:box-shadow;
-        transition-duration: .2s;
-        transition-timing-function: ease-out;
+	.suggestedColor__713b5 {
+		width: 34px;
+		height: 34px;
+		border-radius: 2px;
+		border: none;
+		transition-property: box-shadow;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
 
-        &:hover {
-            box-shadow: var(--btn-grey-boxshadow);
-        }
-    }
+		&:hover {
+			box-shadow: var(--btn-grey-boxshadow);
+		}
+	}
 }
 
 .hue_a50813 {
-    height: 8px;
-    margin: 10px 0;
+	height: 8px;
+	margin: 10px 0;
 
-    >div>div {
-        border-radius: 50px;
-    }
+	> div > div {
+		border-radius: 50px;
+	}
 }

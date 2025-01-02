@@ -1,44 +1,44 @@
 .phoneVerificationModal_a4eb9e {
-    margin: 0;
-    padding: 0;
-    transform: none !important;
+	margin: 0;
+	padding: 0;
+	transform: none !important;
 
-    .animationContainer_a4eb9e {
-        position: absolute;
-        top: 0 !important;
-        right: 0 !important;
-        left: unset !important;
-        bottom: unset !important;
-        height: 72px;
-        width: 124px;
-    }
+	.animationContainer_a4eb9e {
+		position: absolute;
+		top: 0 !important;
+		right: 0 !important;
+		left: unset !important;
+		bottom: unset !important;
+		height: 72px;
+		width: 124px;
+	}
 
-    .title_b9693a {
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 24px;
-        margin: 0;
-        padding: 32px;
-        width: 100%;
-        box-sizing: border-box;
-    }
+	.title_b9693a {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 24px;
+		margin: 0;
+		padding: 32px;
+		width: 100%;
+		box-sizing: border-box;
+	}
 
-    .description_b9693a {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 32px;
-        margin-bottom: 10px;
-        text-align: left;
-        --text-normal: hsl(calc(var(--accent-hue) + 5) calc(var(--saturation-factor, 1)*7.8%) 69.8%);
-        font-size: 14px;
-        line-height: 18px;
+	.description_b9693a {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 32px;
+		margin-bottom: 10px;
+		text-align: left;
+		--text-normal: hsl(calc(var(--accent-hue) + 5) calc(var(--saturation-factor, 1) * 7.8%) 69.8%);
+		font-size: 14px;
+		line-height: 18px;
 
-        strong {
-            color: #fff;
-        }
-    }
+		strong {
+			color: #fff;
+		}
+	}
 
-    .phoneField_d4eb58 {
-        margin: 32px;
-    }
+	.phoneField_d4eb58 {
+		margin: 32px;
+	}
 }

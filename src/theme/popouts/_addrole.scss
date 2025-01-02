@@ -1,63 +1,63 @@
 .container_ac201b {
-    border-radius: 0;
-    border: none;
-    background: var(--contextmenu-background);
-    box-shadow: var(--contextmenu-shadow);
-    padding: 0;
+	border-radius: 0;
+	border: none;
+	background: var(--contextmenu-background);
+	box-shadow: var(--contextmenu-shadow);
+	padding: 0;
 
-    .container__33507 {
-        background: rgb(0 0 0/.2);
-        border: 1px solid #000;
-        box-shadow: 1px 1px 0 0 var(--store-search-border);
-        font-size: 20px;
-        border-radius: 2px;
-        margin: 8px 8px 0;
+	.container__33507 {
+		background: rgb(0 0 0/0.2);
+		border: 1px solid #000;
+		box-shadow: 1px 1px 0 0 var(--store-search-border);
+		font-size: 20px;
+		border-radius: 2px;
+		margin: 8px 8px 0;
 
-        &:hover {
-            background: rgb(0 0 0/.3);
-        }
+		&:hover {
+			background: rgb(0 0 0/0.3);
+		}
 
-        &:focus,
-        &:focus-within {
-            background: var(--background-modifier-accent-dark);
-            box-shadow: inset 1px 1px 4px #000a;
-        }
+		&:focus,
+		&:focus-within {
+			background: var(--background-modifier-accent-dark);
+			box-shadow: inset 1px 1px 4px #000a;
+		}
 
-        input {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 22px;
+		input {
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
 
-            &::placeholder {
-                font-style: italic;
-            }
-        }
+			&::placeholder {
+				font-style: italic;
+			}
+		}
 
-        svg {
-            color: var(--brand-experiment);
-        }
-    }
+		svg {
+			color: var(--brand-experiment);
+		}
+	}
 
-    .item_eef3ef {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        height: 36px;
-        box-sizing: border-box;
-        border-radius: 0;
-        color: var(--contextmenu-text);
+	.item_eef3ef {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		height: 36px;
+		box-sizing: border-box;
+		border-radius: 0;
+		color: var(--contextmenu-text);
 
-        &:hover:not(.disabled_eef3ef) {
-            background: var(--contextmenu-text);
-            color: var(--contextmenu-text-hover);
+		&:hover:not(.disabled_eef3ef) {
+			background: var(--contextmenu-text);
+			color: var(--contextmenu-text-hover);
 
-            .roleName_e4010c .defaultColor__77578 {
-                color: var(--contextmenu-text-hover);
-            }
-        }
+			.roleName_e4010c .defaultColor__77578 {
+				color: var(--contextmenu-text-hover);
+			}
+		}
 
-        .roleCircle_a26d7b {
-            box-shadow:0 2px 3px rgb(0 0 0/.3);
-        }
-    }
+		.roleCircle_a26d7b {
+			box-shadow: 0 2px 3px rgb(0 0 0/0.3);
+		}
+	}
 }

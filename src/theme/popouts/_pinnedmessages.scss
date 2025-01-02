@@ -1,32 +1,32 @@
 .messageGroupWrapper_ac90a2 {
-    background: var(--modal-popout-message);
-    border-radius: 0;
-    border: none;
-    margin: 0 0 4px;
+	background: var(--modal-popout-message);
+	border-radius: 0;
+	border: none;
+	margin: 0 0 4px;
 }
 
 .jumpButton_ac90a2 {
-    margin: 0;
-    border-radius: 0;
-    background: var(--btn-grey-hover);
+	margin: 0;
+	border-radius: 0;
+	background: var(--btn-grey-hover);
 }
 
 .jumpButton_ac90a2:hover {
-    background: var(--background-accent-hover);
+	background: var(--background-accent-hover);
 }
 
 .messageGroupWrapper_ac90a2:has(.jumpButton_ac90a2:hover) {
-    background: var(--background-accent);
+	background: var(--background-accent);
 }
 
 .body_ac90a2 {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: var(--text-muted);
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: var(--text-muted);
 }
 
 .footer_ac90a2 {
-    background: none;
+	background: none;
 }

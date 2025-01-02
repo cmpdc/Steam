@@ -1,7 +1,7 @@
 @use "../modals/generic";
 
 #floating-editor-window {
-    &:has(.monaco-editor.focused) {
-        @include generic.modalTopBar;
-    }
+	&:has(.monaco-editor.focused) {
+		@include generic.modalTopBar;
+	}
 }

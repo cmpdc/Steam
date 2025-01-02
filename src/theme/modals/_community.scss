@@ -1,58 +1,58 @@
 .root_f9a4c9:has([class*="overviewSteps"]) {
-    [class*="sequencer"] {
-        padding: 32px 0 0 0;
-    }
+	[class*="sequencer"] {
+		padding: 32px 0 0 0;
+	}
 
-    .content--gAC_W {
-        img {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
+	.content--gAC_W {
+		img {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 
-        .header-3h1Ldm,
-        .headerCaption-3Tw9SO,
-        .updatedHeader-W47DUA {
-            margin-right: 100px;
-            text-align: left;
-        }
-    }
+		.header-3h1Ldm,
+		.headerCaption-3Tw9SO,
+		.updatedHeader-W47DUA {
+			margin-right: 100px;
+			text-align: left;
+		}
+	}
 
-    .header-3h1Ldm,
-    .updatedHeader-W47DUA {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+	.header-3h1Ldm,
+	.updatedHeader-W47DUA {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
-    .button_dd4f85 {
-        height: 34px;
-        min-height: 34px;
-        padding: 8px 14px;
-    }
+	.button_dd4f85 {
+		height: 34px;
+		min-height: 34px;
+		padding: 8px 14px;
+	}
 
-    .roleRow-3AipPg {
-        border-radius: 2px;
-        background: var(--btn-grey);
-    }
+	.roleRow-3AipPg {
+		border-radius: 2px;
+		background: var(--btn-grey);
+	}
 
-    .tableContainer-ElCMnk {
-        padding: 8px 24px 10px 16px;
-        background: var(--btn-grey);
-        border-radius: 2px;
-    }
+	.tableContainer-ElCMnk {
+		padding: 8px 24px 10px 16px;
+		background: var(--btn-grey);
+		border-radius: 2px;
+	}
 }
 
 .checkboxWrapper_f6cde8.row_f6cde8,
 .checkboxWrapper_f6cde8.row_f6cde8.checked_f6cde8 {
-    background: var(--btn-grey);
-    border-radius: 2px;
-    transition-property: background, box-shadow, color;
-    transition-duration: .2s;
-    transition-timing-function: ease-out;
+	background: var(--btn-grey);
+	border-radius: 2px;
+	transition-property: background, box-shadow, color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
 
-    &:hover {
-        background: var(--btn-grey-hover);
-        color: #fff;
-        box-shadow: var(--btn-grey-boxshadow);
-    }
+	&:hover {
+		background: var(--btn-grey-hover);
+		color: #fff;
+		box-shadow: var(--btn-grey-boxshadow);
+	}
 }

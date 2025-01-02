@@ -1,107 +1,107 @@
 .input_f8bc55 {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    border-radius: 2px;
-    background: var(--btn-grey);
-    border: none;
-    -webkit-transition: none;
-    transition: none;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	border-radius: 2px;
+	background: var(--btn-grey);
+	border: none;
+	-webkit-transition: none;
+	transition: none;
 
-    &:hover {
-        background: var(--btn-grey-hover-light);
-    }
+	&:hover {
+		background: var(--btn-grey-hover-light);
+	}
 
-    &:focus,
-    &:focus-within {
-        background: var(--background-modifier-accent-dark);
-        box-shadow: inset 1px 1px 4px #000a;
-    }
+	&:focus,
+	&:focus-within {
+		background: var(--background-modifier-accent-dark);
+		box-shadow: inset 1px 1px 4px #000a;
+	}
 
-    &::placeholder {
-        font-style: italic;
-    }
+	&::placeholder {
+		font-style: italic;
+	}
 }
 
 .inputDefault_f8bc55 {
-    height: 42px;
+	height: 42px;
 }
 
 #app-mount .bioTextArea_ccf27d {
-    background: var(--btn-grey);
-    border: none;
-    box-shadow: none;
-    border-radius: 2px;
+	background: var(--btn-grey);
+	border: none;
+	box-shadow: none;
+	border-radius: 2px;
 
-    &:focus,
-    &:focus-within {
-        background: var(--background-modifier-accent-dark);
-        box-shadow: inset 1px 1px 4px #000a;
-    }
+	&:focus,
+	&:focus-within {
+		background: var(--background-modifier-accent-dark);
+		box-shadow: inset 1px 1px 4px #000a;
+	}
 
-    .textArea_d0696b,
-    .markup_f8f345 {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 22px;
-    }
+	.textArea_d0696b,
+	.markup_f8f345 {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 22px;
+	}
 }
 
 .cardInput-33x7OF {
-    // padding: 10px 9px;
-    border-radius: 2px;
-    background: var(--btn-grey);
+	// padding: 10px 9px;
+	border-radius: 2px;
+	background: var(--btn-grey);
 
-    &:hover {
-        background: var(--btn-grey-hover-light);
-    }
+	&:hover {
+		background: var(--btn-grey-hover-light);
+	}
 
-    &:focus,
-    &:focus-within {
-        background: var(--background-modifier-accent-dark);
-        box-shadow: inset 1px 1px 4px #000a;
-    }
+	&:focus,
+	&:focus-within {
+		background: var(--background-modifier-accent-dark);
+		box-shadow: inset 1px 1px 4px #000a;
+	}
 }
 
 .phoneField_d4eb58 {
-    border-radius: 2px;
-    padding: 2px;
-    position: relative;
-    background: var(--btn-grey);
-    border: none;
+	border-radius: 2px;
+	padding: 2px;
+	position: relative;
+	background: var(--btn-grey);
+	border: none;
 
-    &:hover {
-        background: var(--btn-grey-hover-light);
-    }
+	&:hover {
+		background: var(--btn-grey-hover-light);
+	}
 
-    &:focus,
-    &:focus-within {
-        background: var(--background-modifier-accent-dark);
-        box-shadow: inset 1px 1px 4px #000a;
-    }
+	&:focus,
+	&:focus-within {
+		background: var(--background-modifier-accent-dark);
+		box-shadow: inset 1px 1px 4px #000a;
+	}
 
-    &:not(:focus, :focus-within) {
-        box-shadow: none;
-    }
+	&:not(:focus, :focus-within) {
+		box-shadow: none;
+	}
 
-    .inputField_d4eb58 {
-        background: none;
-        font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    }
+	.inputField_d4eb58 {
+		background: none;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 22px;
+	}
 }
 
-.copyInput_cedfaf  {
-    background: var(--btn-grey);
-    border: none;
-    border-radius: 2px;
+.copyInput_cedfaf {
+	background: var(--btn-grey);
+	border: none;
+	border-radius: 2px;
 
-    input {
-        font-size: 14px;
-    }
+	input {
+		font-size: 14px;
+	}
 
-    &:hover {
-        background: var(--btn-grey-hover-light);
-    }
+	&:hover {
+		background: var(--btn-grey-hover-light);
+	}
 }

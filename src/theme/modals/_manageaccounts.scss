@@ -1,84 +1,83 @@
 .root_f9a4c9 {
-    .header_f31a4d {
-        padding: 0;
-        align-items: flex-start;
+	.header_f31a4d {
+		padding: 0;
+		align-items: flex-start;
 
-        [data-text-variant="heading-xl/semibold"] {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-        }
+		[data-text-variant="heading-xl/semibold"] {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+		}
 
-        .subheaderText_f31a4d {
-            margin: 0;
-        }
-    }
+		.subheaderText_f31a4d {
+			margin: 0;
+		}
+	}
 
-    .list_f20a46 {
-        background: none;
-        border-radius: 0;
+	.list_f20a46 {
+		background: none;
+		border-radius: 0;
 
-        [class*="separator"] {
-            display: none;
-        }
+		[class*="separator"] {
+			display: none;
+		}
 
+		.accountCard_f20a46 {
+			padding: 8px 24px 10px 16px;
+			background: var(--btn-grey);
+			border-radius: 2px;
 
-        .accountCard_f20a46 {
-            padding: 8px 24px 10px 16px;
-            background: var(--btn-grey);
-            border-radius: 2px;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
 
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
+			[data-text-variant="text-md/semibold"] {
+				font-weight: 400;
+			}
 
-            [data-text-variant="text-md/semibold"] {
-                font-weight: 400;
-            }
+			.hintText_f20a46 {
+				font-size: 12px;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+		}
+	}
 
-            .hintText_f20a46 {
-                font-size: 12px;
-                letter-spacing: .5px;
-                text-transform: uppercase;
-                font-weight: 700;
-            }
-        }
-    }
-
-    .actions_f31a4d {
-        margin: 32px 0;
-    }
+	.actions_f31a4d {
+		margin: 32px 0;
+	}
 }
 
 #app-mount {
-    .authBox_dc6abe {
-        background: none;
-        box-shadow: none;
-        padding: 32px 32px 0 32px;
+	.authBox_dc6abe {
+		background: none;
+		box-shadow: none;
+		padding: 32px 32px 0 32px;
 
-        +[class*="navRow"] {
-            background: none;
-            padding: 32px;
-            
-            [class*="button"] {
-                margin: 0;
-            }
-        }
-    }
+		+ [class*="navRow"] {
+			background: none;
+			padding: 32px;
+
+			[class*="button"] {
+				margin: 0;
+			}
+		}
+	}
 }
 
 [class*="mainLoginContainer"] {
-    h1 {
-        text-align: left;
-        font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-            margin-bottom: 0;
-    }
+	h1 {
+		text-align: left;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 24px;
+		margin-bottom: 0;
+	}
 
-    [class*="subtitle"] {
-        text-align: left;
-        padding: 0;
-        margin-bottom: 32px;
-    }
+	[class*="subtitle"] {
+		text-align: left;
+		padding: 0;
+		margin-bottom: 32px;
+	}
 }

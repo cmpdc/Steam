@@ -1,65 +1,65 @@
-@use '../container';
+@use "../container";
 
 #subscriptions-tab {
-    .h1_c46f6a.title_c46f6a.defaultColor_c46f6a.sectionTitle_a206c7 {
-        @include container.settingsHeader;
-        @include container.settingsHeaderText;
-    }
+	.h1_c46f6a.title_c46f6a.defaultColor_c46f6a.sectionTitle_a206c7 {
+		@include container.settingsHeader;
+		@include container.settingsHeaderText;
+	}
 
-    .card_a298b8 {
-        padding: 8px 24px 10px 16px;
-        margin-top: 0;
-        margin-right: 8px;
-        border-radius: 2px;
+	.card_a298b8 {
+		padding: 8px 24px 10px 16px;
+		margin-top: 0;
+		margin-right: 8px;
+		border-radius: 2px;
 
-        &[class*="noItemsCard"] {
-            background: var(--background-accent);
-            width: fit-content;
-        }
+		&[class*="noItemsCard"] {
+			background: var(--background-accent);
+			width: fit-content;
+		}
 
-        [class*="noItemsIcon"] {
-            background: #fff;
+		[class*="noItemsIcon"] {
+			background: #fff;
 
-            &.small_f394e5 {
-                width: 20px;
-                height: 20px;
-            }
-        }
+			&.small_f394e5 {
+				width: 20px;
+				height: 20px;
+			}
+		}
 
-        .gameIcon_f394e5 {
-            color: var(--background-accent);
-        }
+		.gameIcon_f394e5 {
+			color: var(--background-accent);
+		}
 
-        [class*="cardText"] {
-            font-size: 14px;
-            font-weight: 600;
-            color: #fff;
-            line-height: 20px;
-        }
-    }
+		[class*="cardText"] {
+			font-size: 14px;
+			font-weight: 600;
+			color: #fff;
+			line-height: 20px;
+		}
+	}
 
-    .sectionAccountCredit_e70817,
-    .subscriptionDetails_e70817 {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        border-bottom: thin solid var(--background-modifier-accent-dark);
-    }
+	.sectionAccountCredit_e70817,
+	.subscriptionDetails_e70817 {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: thin solid var(--background-modifier-accent-dark);
+	}
 }
 
 .accountCreditTitle_e70817 {
-    color: var(--text-muted);
-    font-size: 14px;
-    letter-spacing: .5px;
-    line-height: 36px;
-    margin-bottom: 0;
-    text-transform: uppercase;
+	color: var(--text-muted);
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 36px;
+	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 .accountCreditDescription_e70817 {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    color: var(--text-muted);
-    letter-spacing: 0;
-    margin-bottom: 10px;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	color: var(--text-muted);
+	letter-spacing: 0;
+	margin-bottom: 10px;
 }

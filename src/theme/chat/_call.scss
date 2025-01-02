@@ -1,80 +1,80 @@
 .wrapper_d880dc {
-    background: #000;
+	background: #000;
 
-    &.chatSidebarOpen_d880dc .callContainer_d880dc {
-        border-radius: 0;
-    }
+	&.chatSidebarOpen_d880dc .callContainer_d880dc {
+		border-radius: 0;
+	}
 }
 
 .chat_a7d72e:has(.wrapper_d880dc.video_d880dc) {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 #app-mount:-webkit-full-screen {
-    --app-gutter: 0;
-    --content-gutter: 0;
+	--app-gutter: 0;
+	--content-gutter: 0;
 }
 
 .root_a5ea57 {
-    background: var(--background-tertiary);
+	background: var(--background-tertiary);
 }
 
 .tile_dc5fc4 {
-    border-radius: 4px;
+	border-radius: 4px;
 }
 
 .overlayTitle_ba4b17 {
-    border-radius: 4px;
+	border-radius: 4px;
 }
 
 .container_bdea70 {
-    background: var(--modal-background);
-    border-radius: 0;
-    box-shadow: 1px 3px 14px rgb(0 0 0/.65);
+	background: var(--modal-background);
+	border-radius: 0;
+	box-shadow: 1px 3px 14px rgb(0 0 0/0.65);
 
-    [class*="emojiPickerHeader"] {
-        background: none;
-    }
+	[class*="emojiPickerHeader"] {
+		background: none;
+	}
 
-    [class*="animatedPicker"] {
-        background: none;
-    }
+	[class*="animatedPicker"] {
+		background: none;
+	}
 
-    [class*="dropDown"] {
-        color: var(--brand-experiment);
-    }
+	[class*="dropDown"] {
+		color: var(--brand-experiment);
+	}
 
-    .label_b7d6f1 {
-        border-radius: 3px;
-    }
+	.label_b7d6f1 {
+		border-radius: 3px;
+	}
 }
 
 .container_b572de {
-    background: var(--modal-background);
-    border-radius: 0;
-    box-shadow: 1px 3px 14px rgb(0 0 0/.65);
+	background: var(--modal-background);
+	border-radius: 0;
+	box-shadow: 1px 3px 14px rgb(0 0 0/0.65);
 
-    .titleRight_b572de[role="button"] {
-        border-radius: 2px;
-        height: 34px;
-        padding: 8px 14px;
-        box-sizing: border-box;
-        background: var(--btn-brand);
-        --text-normal: var(--btn-brand-text);
-        --interactive-active: var(--brand-experiment);
+	.titleRight_b572de[role="button"] {
+		border-radius: 2px;
+		height: 34px;
+		padding: 8px 14px;
+		box-sizing: border-box;
+		background: var(--btn-brand);
+		--text-normal: var(--btn-brand-text);
+		--interactive-active: var(--brand-experiment);
 
-        &:hover {
-            background: var(--btn-brand-hover);
-            --text-normal: #fff;
-            --interactive-active: #fff;
-        }
+		&:hover {
+			background: var(--btn-brand-hover);
+			--text-normal: #fff;
+			--interactive-active: #fff;
+		}
 
-        [class*="defaultColor"] {
-            font-weight: 400;
-        }
-    }
+		[class*="defaultColor"] {
+			font-weight: 400;
+		}
+	}
 }
 
 .activityItem_ec77c5 {
-    border-radius: 3px;
+	border-radius: 3px;
 }

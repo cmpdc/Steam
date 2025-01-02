@@ -1,18 +1,18 @@
 #app-mount {
-    ::-webkit-scrollbar-track {
-        background: none;
-    }
+	::-webkit-scrollbar-track {
+		background: none;
+	}
 
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--scroller-color);
-    }
+	::-webkit-scrollbar-thumb {
+		background-color: var(--scroller-color);
+	}
 
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: var(--scroller-hover-color);
-    }
+	::-webkit-scrollbar-thumb:hover {
+		background-color: var(--scroller-hover-color);
+	}
 }
 
 .auto_eed6a8::-webkit-scrollbar {
-    width: 14px;
-    height: 14px;
+	width: 14px;
+	height: 14px;
 }

@@ -1,110 +1,110 @@
 .container_fca846 {
-    max-width: var(--content-width);
+	max-width: var(--content-width);
 
-    .scroller_fca846 {
-        background: none;
-    }
+	.scroller_fca846 {
+		background: none;
+	}
 
-    .container_d575b2 {
-        margin-top: var(--content-gutter);
-        padding-bottom: 12px;
-        background: linear-gradient(to right, transparent 50%, rgb(0 0 0/.4) 100%);
-        display: grid;
-        grid-template-areas:
-            "banner icon"
-            "banner title"
-            "banner sub";
-        column-gap: 16px;
-        align-items: start;
-        grid-template-columns: 1fr 324px;
-        position: relative;
-    }
+	.container_d575b2 {
+		margin-top: var(--content-gutter);
+		padding-bottom: 12px;
+		background: linear-gradient(to right, transparent 50%, rgb(0 0 0/0.4) 100%);
+		display: grid;
+		grid-template-areas:
+			"banner icon"
+			"banner title"
+			"banner sub";
+		column-gap: 16px;
+		align-items: start;
+		grid-template-columns: 1fr 324px;
+		position: relative;
+	}
 
-    .coverImageContainer_d575b2 {
-        grid-area: banner;
-        padding-bottom: 0;
-        height: 100%;
-        max-height: 338px;
-    }
+	.coverImageContainer_d575b2 {
+		grid-area: banner;
+		padding-bottom: 0;
+		height: 100%;
+		max-height: 338px;
+	}
 
-    .guildIconContainer_d575b2 {
-        grid-area: icon;
-        padding: 0;
-        background: none;
-        border-radius: 3px;
-        margin-top: 16px;
-        margin-bottom: 8px;
-        box-shadow: 0 0 3px #000000;
-        width: 100px;
-    }
+	.guildIconContainer_d575b2 {
+		grid-area: icon;
+		padding: 0;
+		background: none;
+		border-radius: 3px;
+		margin-top: 16px;
+		margin-bottom: 8px;
+		box-shadow: 0 0 3px #000000;
+		width: 100px;
+	}
 
-    .iconInactive_f11207 {
-        border-radius: 3px;
-    }
+	.iconInactive_f11207 {
+		border-radius: 3px;
+	}
 
-    .ctaTitle_d575b2 {
-        grid-area: title;
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 400;
-        text-align: left;
-        margin: 0 0 10px 0;
-        padding-right: 16px;
-        color: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1)*28.1%) 82.5%);
-    }
+	.ctaTitle_d575b2 {
+		grid-area: title;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+		text-align: left;
+		margin: 0 0 10px 0;
+		padding-right: 16px;
+		color: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1) * 28.1%) 82.5%);
+	}
 
-    .ctaSubtitle_d575b2 {
-        grid-area: sub;
-        --header-secondary: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1)*28.1%) 82.5%);
-        font-size: 14px;
-        line-height: 18px;
-        text-align: left;
-        margin: 0;
-        padding-right: 16px;
-    }
+	.ctaSubtitle_d575b2 {
+		grid-area: sub;
+		--header-secondary: hsl(calc(var(--accent-hue) + 1) calc(var(--saturation-factor, 1) * 28.1%) 82.5%);
+		font-size: 14px;
+		line-height: 18px;
+		text-align: left;
+		margin: 0;
+		padding-right: 16px;
+	}
 
-    .container_ecba8f {
-        flex: 1 1 320px;
-        border-radius: 4px 4px 0 0;
-    }
+	.container_ecba8f {
+		flex: 1 1 320px;
+		border-radius: 4px 4px 0 0;
+	}
 
-    .roleMessagePreview_ecba8f {
-        padding: 0;
-        background: none;
-        border-radius: 0;
-        border: none;
-    }
+	.roleMessagePreview_ecba8f {
+		padding: 0;
+		background: none;
+		border-radius: 0;
+		border: none;
+	}
 
-    .benefitsList_ecba8f {
-        gap: 10px;
-    }
+	.benefitsList_ecba8f {
+		gap: 10px;
+	}
 
-    .container_a934b7 {
-        padding: 8px 24px 10px 16px;
-        background: var(--btn-grey);
-        border-radius: 2px;
-    }
+	.container_a934b7 {
+		padding: 8px 24px 10px 16px;
+		background: var(--btn-grey);
+		border-radius: 2px;
+	}
 }
 
 .tierPreviewsContainer_c19193 {
-    padding: 0;
+	padding: 0;
 }
 
 .cardContainerWithoutTopIndicator_ecba8f {
-    border-radius: 4px 4px 0 0;
-    
-    .tierInfoContainer_ecba8f {
-        background: var(--banner-lightblue);
-        padding: 32px 16px 16px;
-    }
+	border-radius: 4px 4px 0 0;
+
+	.tierInfoContainer_ecba8f {
+		background: var(--banner-lightblue);
+		padding: 32px 16px 16px;
+	}
 }
 
 .subscriptionPerks_ecba8f {
-    background: rgb(0 0 0/.4);
+	background: rgb(0 0 0/0.4);
 }
 
 .infoContainer_a934b7 {
-    .name_a934b7 {
-        font-weight: 400;
-    }
+	.name_a934b7 {
+		font-weight: 400;
+	}
 }

@@ -1,108 +1,107 @@
 #appearance-tab {
-    .children_a6ae9b>[data-text-variant="text-md/normal"]:last-child {
-        padding: 0;
-        background: none;
-        border: none;
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
-        color: var(--text-muted);
-        letter-spacing: 0;
-        margin-top: 40px;
-    }
+	.children_a6ae9b > [data-text-variant="text-md/normal"]:last-child {
+		padding: 0;
+		background: none;
+		border: none;
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: var(--text-muted);
+		letter-spacing: 0;
+		margin-top: 40px;
+	}
 }
 
 .presets_f45ea6.basicThemeSelectors_ {
-    padding: 6px;
-    background: var(--darker-grey);
-    box-shadow: inset 0 1px 1px 0 #000a;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 6px;
+	padding: 6px;
+	background: var(--darker-grey);
+	box-shadow: inset 0 1px 1px 0 #000a;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-gap: 6px;
 
-    .themeSelectionContainer_cb7c27 {
-        height: fit-content;
-        width: 100%;
+	.themeSelectionContainer_cb7c27 {
+		height: fit-content;
+		width: 100%;
 
-        .selectionCircle_cb7c27,
-        .iconWrapper_cb7c27 {
-            display: none;
-        }
+		.selectionCircle_cb7c27,
+		.iconWrapper_cb7c27 {
+			display: none;
+		}
 
-        .themeSelection_cb7c27 {
-            padding: 6px;
-            box-shadow: none;
-            background: none;
-            justify-content: center;
-            display: flex;
-            transition: background 0.18s ease-in-out;
+		.themeSelection_cb7c27 {
+			padding: 6px;
+			box-shadow: none;
+			background: none;
+			justify-content: center;
+			display: flex;
+			transition: background 0.18s ease-in-out;
 
-            &[aria-label]::after {
-                content: attr(aria-label);
-                font-size: 14px;
-                line-height: 18px;
-                font-weight: 400;
-                color: var(--text-lighter);
-            }
+			&[aria-label]::after {
+				content: attr(aria-label);
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: 400;
+				color: var(--text-lighter);
+			}
 
-            &:hover {
-                background: hsl(calc(var(--accent-hue) + 19) calc(var(--saturation-factor, 1)*9.7%) 22.2%);
-            }
+			&:hover {
+				background: hsl(calc(var(--accent-hue) + 19) calc(var(--saturation-factor, 1) * 9.7%) 22.2%);
+			}
 
-            &.selected_cb7c27 {
-                background: var(--topbar-item-selected);
+			&.selected_cb7c27 {
+				background: var(--topbar-item-selected);
 
-                &[aria-label]::after {
-                    color: #fff;
-                }
-            }
-        }
-    }
+				&[aria-label]::after {
+					color: #fff;
+				}
+			}
+		}
+	}
 }
 
 .featureBorder_c6d722 {
-    border-radius: 0;
-    margin: 0;
+	border-radius: 0;
+	margin: 0;
 
-    .background_c6d722 {
-        padding: 10px 0 0 0;
-        margin: 0 -2px -2px -2px;
-        background: var(--background-tertiary);
+	.background_c6d722 {
+		padding: 10px 0 0 0;
+		margin: 0 -2px -2px -2px;
+		background: var(--background-tertiary);
 
-        .header_f45ea6 {
+		.header_f45ea6 {
+			.headings_f45ea6 {
+				gap: 0;
+			}
 
-            .headings_f45ea6 {
-                gap: 0;
-            }
+			[data-text-variant="text-md/medium"] {
+				color: var(--text-muted);
+				font-size: 14px;
+				font-weight: 700;
+				letter-spacing: 0.5px;
+				line-height: 36px;
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
 
-            [data-text-variant="text-md/medium"] {
-                color: var(--text-muted);
-                font-size: 14px;
-                font-weight: 700;
-                letter-spacing: 0.5px;
-                line-height: 36px;
-                margin-bottom: 0;
-                text-transform: uppercase;
-            }
-
-            [data-text-variant="text-sm/normal"] {
-                font-size: 13px;
-                line-height: 18px;
-                font-weight: 400;
-                color: var(--text-muted);
-                letter-spacing: 0;
-            }
-        }
-    }
+			[data-text-variant="text-sm/normal"] {
+				font-size: 13px;
+				line-height: 18px;
+				font-weight: 400;
+				color: var(--text-muted);
+				letter-spacing: 0;
+			}
+		}
+	}
 }
 
 .presets_f45ea6 {
-    margin-top: 10px;
-    gap: 10px;
+	margin-top: 10px;
+	gap: 10px;
 }
 
 .themeSelection_cb7c27 {
-    border-radius: 2px;
+	border-radius: 2px;
 }

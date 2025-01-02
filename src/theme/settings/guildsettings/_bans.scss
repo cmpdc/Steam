@@ -1,74 +1,74 @@
-@use '../container';
+@use "../container";
 
 .container_c90ddb {
-    gap: 0;
-    padding: 0 24px 24px 24px;
-    width: unset;
+	gap: 0;
+	padding: 0 24px 24px 24px;
+	width: unset;
 
-    .sectionTitle_a6ae9b .title_c46f6a {
-        @include container.settingsHeader;
-        @include container.settingsHeaderText;
-    }
+	.sectionTitle_a6ae9b .title_c46f6a {
+		@include container.settingsHeader;
+		@include container.settingsHeaderText;
+	}
 }
 
 .bansSearchContainer_c90ddb {
-    gap: 16px;
+	gap: 16px;
 
-    .searchBar_c90ddb {
-        border-radius: 2px;
-        transition-property: background, box-shadow;
-        transition-duration: .2s;
-        transition-timing-function: ease-out;
+	.searchBar_c90ddb {
+		border-radius: 2px;
+		transition-property: background, box-shadow;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
 
-        .icon_fb52f0 {
-            color: var(--brand-experiment);
-        }
+		.icon_fb52f0 {
+			color: var(--brand-experiment);
+		}
 
-        input,
-        input::placeholder {
-            color: #fff;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 600;
-        }
+		input,
+		input::placeholder {
+			color: #fff;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+		}
 
-        &:hover:not(:focus, :focus-within) {
-            background: var(--btn-grey-hover);
-            box-shadow: var(--btn-grey-boxshadow);
-        }
+		&:hover:not(:focus, :focus-within) {
+			background: var(--btn-grey-hover);
+			box-shadow: var(--btn-grey-boxshadow);
+		}
 
-        &:focus,
-        &:focus-within {
-            background: var(--btn-grey);
-        }
-    }
+		&:focus,
+		&:focus-within {
+			background: var(--btn-grey);
+		}
+	}
 }
 
 .scrollerContainer_c90ddb {
-    height: 100%;
-    padding: 0;
-    border-radius: 0;
-    background: none;
-    box-shadow: none;
-    margin-top: 10px;
+	height: 100%;
+	padding: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+	margin-top: 10px;
 
-    .listItems_dcade6 {
-        inset: 0 !important;
-    }
+	.listItems_dcade6 {
+		inset: 0 !important;
+	}
 }
 
 .bannedUser_c90ddb {
-    #app-mount & {
-        box-shadow: none;
-    }
+	#app-mount & {
+		box-shadow: none;
+	}
 
-    cursor: pointer;
-    border-radius: 0;
-    background: none;
-    transition: none;
+	cursor: pointer;
+	border-radius: 0;
+	background: none;
+	transition: none;
 
-    &:hover {
-        background: var(--background-accent);
-        transition: background .2s linear;
-    }
+	&:hover {
+		background: var(--background-accent);
+		transition: background 0.2s linear;
+	}
 }

@@ -1,49 +1,51 @@
-#app-mount .wrapper_fea3ef.guilds_a4d4d9 [class*=expandedFolderBackground] {
-    border-radius: 2px;
+#app-mount .wrapper_fea3ef.guilds_a4d4d9 [class*="expandedFolderBackground"] {
+	border-radius: 2px;
 }
 
 #app-mount .folder_bc7085 {
-    background: none;
+	background: none;
 }
 
 .expandedFolderBackground_bc7085 {
-    bottom: 0;
-    background-color: var(--brand-experiment-700);
+	bottom: 0;
+	background-color: var(--brand-experiment-700);
 
-    &.collapsed_bc7085 {
-        background-color: var(--header-button-background);
-        height: var(--server-size);
+	&.collapsed_bc7085 {
+		background-color: var(--header-button-background);
+		height: var(--server-size);
 
-        &.hover_bc7085 {
-            background-color: var(--brand-experiment-700);
-        }
+		&.hover_bc7085 {
+			background-color: var(--brand-experiment-700);
+		}
 
-        &:before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-            border-radius: 0;
-            box-shadow: 0 0 0 1px var(--gpColor-Grey), inset 0 0 0 1px var(--background-tertiary);
-            transition: box-shadow .15s ease;
-            z-index: 1;
-        }
+		&:before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+			border-radius: 0;
+			box-shadow:
+				0 0 0 1px var(--gpColor-Grey),
+				inset 0 0 0 1px var(--background-tertiary);
+			transition: box-shadow 0.15s ease;
+			z-index: 1;
+		}
 
-        &:has(+.listItem_c96c45 .item_c4cd66[style="opacity: 1; height: 40px; transform: none;"]):before {
-            --gpColor-Grey: var(--brand-experiment);
-        }
+		&:has(+ .listItem_c96c45 .item_c4cd66[style="opacity: 1; height: 40px; transform: none;"]):before {
+			--gpColor-Grey: var(--brand-experiment);
+		}
 
-        &:has(+.listItem_c96c45 .item_c4cd66):before {
-            --gpColor-Grey: var(--header-primary);
-        }
-    }
+		&:has(+ .listItem_c96c45 .item_c4cd66):before {
+			--gpColor-Grey: var(--header-primary);
+		}
+	}
 }
 
 [class^="folderIconWrapper"] {
-    border-radius: 2px;
-    background-color: transparent !important;
+	border-radius: 2px;
+	background-color: transparent !important;
 }
 
 .expandedFolderIconWrapper_bc7085 svg {
-    color: var(--brand-experiment-300) !important;
+	color: var(--brand-experiment-300) !important;
 }

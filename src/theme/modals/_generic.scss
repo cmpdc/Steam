@@ -1,137 +1,140 @@
 @mixin modalTopBar {
-    &::before {
-        content: '';
-        display: block;
-        height: 1px;
-        width: 100%;
-        background: linear-gradient(to right, hsl(calc(var(--accent-hue) - 13) calc(var(--saturation-factor, 1)*100%) 50%) 0%, hsl(calc(var(--accent-hue) + 20) calc(var(--saturation-factor, 1)*100%) 60%) 100%);
-        position: absolute;
-        z-index: 102;
-        top: 0;
-    }
+	&::before {
+		content: "";
+		display: block;
+		height: 1px;
+		width: 100%;
+		background: linear-gradient(
+			to right,
+			hsl(calc(var(--accent-hue) - 13) calc(var(--saturation-factor, 1) * 100%) 50%) 0%,
+			hsl(calc(var(--accent-hue) + 20) calc(var(--saturation-factor, 1) * 100%) 60%) 100%
+		);
+		position: absolute;
+		z-index: 102;
+		top: 0;
+	}
 }
 
 .backdrop_e4f2ae.withLayer_e4f2ae[style="background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(0px);"] {
-    opacity: 0.8 !important;
+	opacity: 0.8 !important;
 }
 
 #app-mount {
-    .root_f9a4c9 {
-        background: var(--modal-background);
-        box-shadow: none;
-    }
+	.root_f9a4c9 {
+		background: var(--modal-background);
+		box-shadow: none;
+	}
 }
 
 .root_f9a4c9 {
-    @include modalTopBar;
-    border-radius: 0;
+	@include modalTopBar;
+	border-radius: 0;
 
-    --text-link: var(--text-linkHi);
-    a:hover {
-        text-decoration:none;
-        --text-link: var(--text-linkHi-hover);
-    }
+	--text-link: var(--text-linkHi);
+	a:hover {
+		text-decoration: none;
+		--text-link: var(--text-linkHi-hover);
+	}
 
-    .close_f9a4c9 {
-        position: absolute;
-        top: 9px;
-        right: 9px;
-        height: 16px;
-        width: 16px;
-        margin: 0;
-        padding: 0;
+	.close_f9a4c9 {
+		position: absolute;
+		top: 9px;
+		right: 9px;
+		height: 16px;
+		width: 16px;
+		margin: 0;
+		padding: 0;
 
-        .contents_dd4f85 {
-            height: 16px;
-        }
+		.contents_dd4f85 {
+			height: 16px;
+		}
 
-        svg {
-            height: 16px !important;
-            width: 16px !important;
-        }
-    }
+		svg {
+			height: 16px !important;
+			width: 16px !important;
+		}
+	}
 
-    .artContainer_ffaecb {
-        z-index: 102;
-    }
+	.artContainer_ffaecb {
+		z-index: 102;
+	}
 
-    [class*="modalHeader"] {
-        background-color: transparent;
-    }
+	[class*="modalHeader"] {
+		background-color: transparent;
+	}
 
-    .header_f9a4c9 {
-        box-shadow: none;
-        border-radius: 0;
-        padding: 32px;
+	.header_f9a4c9 {
+		box-shadow: none;
+		border-radius: 0;
+		padding: 32px;
 
-        [data-text-variant="heading-lg/semibold"] {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-        }
-    }
+		[data-text-variant="heading-lg/semibold"] {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+	}
 
-    .footer_f9a4c9:has(>.lookLink_dd4f85) {
-        gap: 4px;
-    }
+	.footer_f9a4c9:has(> .lookLink_dd4f85) {
+		gap: 4px;
+	}
 
-    .footer_f9a4c9,
-    .footer_f82cc7 {
-        padding: 32px;
-        border-radius: 0;
-        box-shadow: none;
-        background: none;
-    }
+	.footer_f9a4c9,
+	.footer_f82cc7 {
+		padding: 32px;
+		border-radius: 0;
+		box-shadow: none;
+		background: none;
+	}
 
-    .content_f9a4c9 {
-        padding-left: 32px;
-        padding-right: 32px;
-        border-radius: 0;
-    }
+	.content_f9a4c9 {
+		padding-left: 32px;
+		padding-right: 32px;
+		border-radius: 0;
+	}
 
-    [data-text-variant="text-md/normal"] {
-        font-size: 14px;
-        line-height: 18px;
-    }
+	[data-text-variant="text-md/normal"] {
+		font-size: 14px;
+		line-height: 18px;
+	}
 
-    [class*="defaultColor"][data-text-variant="text-md/normal"] {
-        --text-normal: hsl(calc(var(--accent-hue) + 5) calc(var(--saturation-factor, 1)*7.8%) 69.8%);
-    }
+	[class*="defaultColor"][data-text-variant="text-md/normal"] {
+		--text-normal: hsl(calc(var(--accent-hue) + 5) calc(var(--saturation-factor, 1) * 7.8%) 69.8%);
+	}
 }
 
 .medium_f9a4c9 {
-    width: 500px;
+	width: 500px;
 
-    &:has([class*="overviewSidebar"],  .guildSidebar_a74b6f) {
-        width: calc(500px + 192px);
-    }
+	&:has([class*="overviewSidebar"], .guildSidebar_a74b6f) {
+		width: calc(500px + 192px);
+	}
 }
 
 .largeSpacing_cacc4c {
-    margin-bottom: 32px;
-    margin-top: 10px;
+	margin-bottom: 32px;
+	margin-top: 10px;
 }
 
 .spacing_cacc4c {
-    margin: 0;
+	margin: 0;
 }
 
 .overrideList_cacc4c {
+	.flex_bba380:has(> .header_cacc4c) {
+		padding-top: 8px;
+		padding-left: 8px;
+	}
 
-    .flex_bba380:has(>.header_cacc4c) {
-        padding-top: 8px;
-        padding-left: 8px;
-    }
+	.header_cacc4c {
+		margin-bottom: 0;
+	}
 
-    .header_cacc4c {
-        margin-bottom: 0;
-    }
+	[class*="headerName"] {
+		margin-left: 0;
+	}
 
-    [class*="headerName"] {
-        margin-left: 0;
-    }
-
-    [class*="headerOption"] {
-        align-self: flex-end;
-    }
+	[class*="headerOption"] {
+		align-self: flex-end;
+	}
 }

@@ -1,147 +1,146 @@
 #authorized-apps-tab {
-    .formNotice_aae945 {
-        padding: 0;
-        margin-bottom: 10px;
-        background: none;
-        border: none;
-    }
+	.formNotice_aae945 {
+		padding: 0;
+		margin-bottom: 10px;
+		background: none;
+		border: none;
+	}
 
-    .authedApp_f0135d {
-        padding: 6px 8px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 0;
-        background: none;
+	.authedApp_f0135d {
+		padding: 6px 8px;
+		margin-bottom: 10px;
+		border: none;
+		border-radius: 0;
+		background: none;
 
-        &:hover {
-            background: var(--background-accent);
-            transition: background .2s linear;
-        }
+		&:hover {
+			background: var(--background-accent);
+			transition: background 0.2s linear;
+		}
 
-        .marginBottom20_f7730b {
-            margin-bottom: 10px;
-        }
+		.marginBottom20_f7730b {
+			margin-bottom: 10px;
+		}
 
-        .headerInfo_f0135d {
+		.headerInfo_f0135d {
+			[data-text-variant="text-sm/semibold"] {
+				margin-left: 12px;
+			}
+		}
 
-            [data-text-variant="text-sm/semibold"] {
-                margin-left: 12px;
-            }
-        }
+		.twoWayWarning_f0135d {
+			margin-top: 10px;
 
-        .twoWayWarning_f0135d {
-            margin-top: 10px;
+			.twoWayWarningIcon_f0135d {
+				height: 18px;
+				width: 18px;
+				color: var(--gpColor-Yellow);
+				margin-right: 4px;
+			}
 
-            .twoWayWarningIcon_f0135d {
-                height: 18px;
-                width: 18px;
-                color: var(--gpColor-Yellow);
-                margin-right: 4px;
-            }
+			[data-text-variant="text-sm/medium"] {
+				font-size: 13px;
+				line-height: 18px;
+				font-weight: 400;
+				color: var(--text-muted) !important;
+			}
+		}
 
-            [data-text-variant="text-sm/medium"] {
-                font-size: 13px;
-                line-height: 18px;
-                font-weight: 400;
-                color: var(--text-muted) !important;
-            }
-        }
+		.permission_f0135d {
+			margin-top: 0;
 
-        .permission_f0135d {
-            margin-top: 0;
+			.formText_b89ec7 {
+				margin-bottom: 0;
+			}
+		}
+	}
 
-            .formText_b89ec7 {
-                margin-bottom: 0;
-            }
-        }
-    }
+	.appAvatar_f0135d {
+		width: 98px;
+		height: 45px;
+		border-radius: 0;
+		object-fit: cover;
+		background: var(--background-accent);
 
-    .appAvatar_f0135d {
-        width: 98px;
-        height: 45px;
-        border-radius: 0;
-        object-fit: cover;
-        background: var(--background-accent);
-
-        // Youtube Together
-        &[src*="755600276941176913/4e"],
+		// Youtube Together
+		&[src*="755600276941176913/4e"],
         // Watch Together
         &[src*="880218394199220334/ec"],
         // StreamKit Overlay
         &[src*="207646673902501888/a3"],
         // Jamspace
         &[src*="1070087967294631976/9a"] {
-            object-fit: scale-down;
-            background: #fff;
-        }
+			object-fit: scale-down;
+			background: #fff;
+		}
 
-        // Xbox
-        &[src*="622174530214821906/38"] {
-            object-fit: scale-down;
-            background: #0F7C10;
-        }
+		// Xbox
+		&[src*="622174530214821906/38"] {
+			object-fit: scale-down;
+			background: #0f7c10;
+		}
 
-        // DiscordServers.com
-        &[src*="162469056312639488/de"] {
-            object-fit: scale-down;
-            background: var(--background-accent);
-        }
+		// DiscordServers.com
+		&[src*="162469056312639488/de"] {
+			object-fit: scale-down;
+			background: var(--background-accent);
+		}
 
-        // BetterDiscordWeb
-        &[src*="777264613867257857/65"] {
-            object-fit: scale-down;
-            background: #0C0D10;
-        }
-    }
+		// BetterDiscordWeb
+		&[src*="777264613867257857/65"] {
+			object-fit: scale-down;
+			background: #0c0d10;
+		}
+	}
 
-    :root {
-        counter-reset: authappsCount;
-    }
+	:root {
+		counter-reset: authappsCount;
+	}
 
-    .children_a6ae9b {
-        display: flex;
-        flex-flow: row wrap;
+	.children_a6ae9b {
+		display: flex;
+		flex-flow: row wrap;
 
-        &:before {
-            content: 'Authorized Apps';
+		&:before {
+			content: "Authorized Apps";
 
-            color: #fff;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 600;
-            letter-spacing: 0;
-            padding-top: 8px;
-            padding-left: 8px;
-            order: -2;
-        }
+			color: #fff;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+			letter-spacing: 0;
+			padding-top: 8px;
+			padding-left: 8px;
+			order: -2;
+		}
 
-        &:after {
-            content: counter(authappsCount);
-            animation: authorized-apps-tabCounter 1s linear infinite forwards;
+		&:after {
+			content: counter(authappsCount);
+			animation: authorized-apps-tabCounter 1s linear infinite forwards;
 
-            // Styles
-            color: var(--text-muted);
-            font-size: 16px;
-            line-height: 20px;
-            margin-left: 8px;
-            font-weight: 600;
-            order: -1;
-            padding-top: 8px;
-        }
-    }
+			// Styles
+			color: var(--text-muted);
+			font-size: 16px;
+			line-height: 20px;
+			margin-left: 8px;
+			font-weight: 600;
+			order: -1;
+			padding-top: 8px;
+		}
+	}
 
-    .formNotice_aae945 {
-        order: -3;
-    }
+	.formNotice_aae945 {
+		order: -3;
+	}
 
-    .authedApp_f0135d {
-        counter-increment: authappsCount;
-        flex-basis: 100%;
-    }
+	.authedApp_f0135d {
+		counter-increment: authappsCount;
+		flex-basis: 100%;
+	}
 
-    @keyframes authorized-apps-tabCounter {
-        to {
-            content: counter(authappsCount);
-        }
-    }
+	@keyframes authorized-apps-tabCounter {
+		to {
+			content: counter(authappsCount);
+		}
+	}
 }

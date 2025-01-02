@@ -1,102 +1,102 @@
 .sessions_c7a2c0 {
-    margin: 10px 0;
+	margin: 10px 0;
 
-    .otherSessions_c7a2c0 {
-        margin-top: 10px;
-    }
+	.otherSessions_c7a2c0 {
+		margin-top: 10px;
+	}
 }
 
 .logOutAllButton_c7a2c0 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .session_c7a2c0 {
-    border-bottom: none;
-    gap: 12px;
-    padding: 6px 8px;
-    height: 58px;
+	border-bottom: none;
+	gap: 12px;
+	padding: 6px 8px;
+	height: 58px;
 
-    &:hover {
-        background: var(--background-accent);
-        transition: background .2s linear;
+	&:hover {
+		background: var(--background-accent);
+		transition: background 0.2s linear;
 
-        .sessionIcon_c7a2c0,
-        .sessionMoreButton_c7a2c0 {
-            background: var(--background-accent-hover);
-            transition: background .2s linear;
-        }
-    }
+		.sessionIcon_c7a2c0,
+		.sessionMoreButton_c7a2c0 {
+			background: var(--background-accent-hover);
+			transition: background 0.2s linear;
+		}
+	}
 
-    .sessionInfo_c7a2c0 {
-        gap: 0;
-    }
+	.sessionInfo_c7a2c0 {
+		gap: 0;
+	}
 
-    .eyebrow_e5a66c {
-        color: #fff;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        text-transform: unset;
-    }
+	.eyebrow_e5a66c {
+		color: #fff;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: unset;
+	}
 
-    [data-text-variant="text-sm/medium"] {
-        color: var(--text-muted);
-        font-size: 12px;
-        line-height: 22px;
-        letter-spacing: .5px;
-        text-transform: uppercase;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
+	[data-text-variant="text-sm/medium"] {
+		color: var(--text-muted);
+		font-size: 12px;
+		line-height: 22px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
 
-        span:nth-child(2) {
-            display: none;
-        }
+		span:nth-child(2) {
+			display: none;
+		}
 
-        span:nth-child(3) {
-            color: var(--background-accent-hover);
-            font-weight: 700;
-        }
-    }
+		span:nth-child(3) {
+			color: var(--background-accent-hover);
+			font-weight: 700;
+		}
+	}
 
-    &:has(.sessionMoreButton_c7a2c0:hover) {
-        .sessionIcon_c7a2c0 {
-            background: var(--status-danger);
-        }
-    }
+	&:has(.sessionMoreButton_c7a2c0:hover) {
+		.sessionIcon_c7a2c0 {
+			background: var(--status-danger);
+		}
+	}
 }
 
 .sessionMoreButton_c7a2c0 {
-    background-color: var(--background-accent);
-    border-radius: 2px;
-    margin: 8px 8px 8px auto;
-    height: 24px;
-    width: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--status-danger);
+	background-color: var(--background-accent);
+	border-radius: 2px;
+	margin: 8px 8px 8px auto;
+	height: 24px;
+	width: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--status-danger);
 
-    &:hover {
-        background: var(--status-danger);
-        color: #fff;
-    }
+	&:hover {
+		background: var(--status-danger);
+		color: #fff;
+	}
 
-    svg {
-        height: 18px;
-        width: 18px;
-    }
+	svg {
+		height: 18px;
+		width: 18px;
+	}
 }
 
 .sessionIcon_c7a2c0 {
-    width: 98px;
-    height: 45px;
-    border-radius: 0;
-    background: var(--background-accent);
-    color: #fff;
+	width: 98px;
+	height: 45px;
+	border-radius: 0;
+	background: var(--background-accent);
+	color: #fff;
 
-    svg {
-        height: 18px;
-        width: 18px;
-    }
+	svg {
+		height: 18px;
+		width: 18px;
+	}
 }

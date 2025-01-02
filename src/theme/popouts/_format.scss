@@ -1,38 +1,38 @@
 #slate-toolbar {
-    background: var(--contextmenu-background);
-    border-radius: 0;
-    box-shadow: var(--contextmenu-shadow);
+	background: var(--contextmenu-background);
+	border-radius: 0;
+	box-shadow: var(--contextmenu-shadow);
 }
 
 .toolbar_de3e42:before {
-    display: none;
+	display: none;
 }
 
 .buttons_de3e42 {
-    border-radius: 0;
+	border-radius: 0;
 
-    .button_dd4f85 {
-        border-radius: 0;
-        font-size: 12px;
-        transition: none;
+	.button_dd4f85 {
+		border-radius: 0;
+		font-size: 12px;
+		transition: none;
 
-        .buttonInner__878f4 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        svg {
-            color: var(--contextmenu-text);
-            height: 18px;
-            width: 18px;
-        }
+		.buttonInner__878f4 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-        &.hover_d0ebf2:hover {
-            background: var(--contextmenu-text);
-            svg {
-                color: var(--contextmenu-text-hover);
-            }
-        }
-    }
+		svg {
+			color: var(--contextmenu-text);
+			height: 18px;
+			width: 18px;
+		}
+
+		&.hover_d0ebf2:hover {
+			background: var(--contextmenu-text);
+			svg {
+				color: var(--contextmenu-text-hover);
+			}
+		}
+	}
 }
